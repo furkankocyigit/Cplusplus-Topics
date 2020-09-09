@@ -1,0 +1,6 @@
+/home/ubuntu/training/Pointers/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/training/Pointers/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/training/Pointers/build/CMakeFiles/first_pointer.dir
+/home/ubuntu/training/Pointers/build/CMakeFiles/usage_pointer.dir
+/home/ubuntu/training/Pointers/build/CMakeFiles/passingPtr.dir
+/home/ubuntu/training/Pointers/build/CMakeFiles/memoryAllocation.dir

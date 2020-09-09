@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -g CMakeFiles/my_template.dir/src/my_template.cpp.o -o my_template 

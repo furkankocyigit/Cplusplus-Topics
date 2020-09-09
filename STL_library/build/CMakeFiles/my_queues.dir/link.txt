@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -g CMakeFiles/my_queues.dir/src/my_queues.cpp.o -o my_queues 

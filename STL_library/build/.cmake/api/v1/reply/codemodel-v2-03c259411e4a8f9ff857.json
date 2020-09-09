@@ -1,0 +1,167 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MyProject",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "my_back_fwd_button::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_back_fwd_button-Debug-8d7dc6b3a511c4738084.json",
+					"name" : "my_back_fwd_button",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_deque::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_deque-Debug-fe7ec11be3fa07b57575.json",
+					"name" : "my_deque",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_guests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_guests-Debug-a2a146c88c90be06c657.json",
+					"name" : "my_guests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_hotel_challenge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_hotel_challenge-Debug-2eeb9aa7d0814a230636.json",
+					"name" : "my_hotel_challenge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_lists::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_lists-Debug-d4c49460ae99d73828f1.json",
+					"name" : "my_lists",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_maps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_maps-Debug-8981fe317c3cb488fc5e.json",
+					"name" : "my_maps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_pins::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_pins-Debug-9d6dfa70ca94874aa7c5.json",
+					"name" : "my_pins",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_prio_queue::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_prio_queue-Debug-db5969f64fa8511003da.json",
+					"name" : "my_prio_queue",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_queues::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_queues-Debug-51a07de46a4038118f7f.json",
+					"name" : "my_queues",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_sets::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_sets-Debug-37789af2c05670c8920f.json",
+					"name" : "my_sets",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_stacks::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_stacks-Debug-a030045e58f421be1bc1.json",
+					"name" : "my_stacks",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_template::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_template-Debug-c49dbef3afb36956495c.json",
+					"name" : "my_template",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_vectors::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_vectors-Debug-20324519c30c9a87f166.json",
+					"name" : "my_vectors",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/training/STL_library/build",
+		"source" : "/home/ubuntu/training/STL_library"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

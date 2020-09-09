@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MyProject",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "first_pointer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-first_pointer-Debug-a00d779a0cc8decfc738.json",
+					"name" : "first_pointer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "memoryAllocation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-memoryAllocation-Debug-8d2c41f9daae4e017ef6.json",
+					"name" : "memoryAllocation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "passingPtr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-passingPtr-Debug-ed6e1f8a3c9e4f7c6dbe.json",
+					"name" : "passingPtr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "usage_pointer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-usage_pointer-Debug-353f466c83022d02c0d2.json",
+					"name" : "usage_pointer",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/training/Pointers/build",
+		"source" : "/home/ubuntu/training/Pointers"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}
