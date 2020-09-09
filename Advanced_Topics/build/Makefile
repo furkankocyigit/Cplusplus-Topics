@@ -130,6 +130,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named namespace
+
+# Build rule for target.
+namespace: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 namespace
+.PHONY : namespace
+
+# fast build rule for target.
+namespace/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/build
+.PHONY : namespace/fast
+
+#=============================================================================
+# Target rules for targets named member-function
+
+# Build rule for target.
+member-function: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 member-function
+.PHONY : member-function
+
+# fast build rule for target.
+member-function/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/build
+.PHONY : member-function/fast
+
+#=============================================================================
 # Target rules for targets named data
 
 # Build rule for target.
@@ -180,6 +206,32 @@ class: cmake_check_build_system
 class/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/class.dir/build.make CMakeFiles/class.dir/build
 .PHONY : class/fast
+
+#=============================================================================
+# Target rules for targets named implicit-explcit
+
+# Build rule for target.
+implicit-explcit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 implicit-explcit
+.PHONY : implicit-explcit
+
+# fast build rule for target.
+implicit-explcit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implicit-explcit.dir/build.make CMakeFiles/implicit-explcit.dir/build
+.PHONY : implicit-explcit/fast
+
+#=============================================================================
+# Target rules for targets named constructor
+
+# Build rule for target.
+constructor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 constructor
+.PHONY : constructor
+
+# fast build rule for target.
+constructor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/build
+.PHONY : constructor/fast
 
 lib/a.o: lib/a.cpp.o
 
@@ -262,6 +314,33 @@ src/chap01/class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/class.dir/build.make CMakeFiles/class.dir/src/chap01/class.cpp.s
 .PHONY : src/chap01/class.cpp.s
 
+src/chap01/constructor.o: src/chap01/constructor.cpp.o
+
+.PHONY : src/chap01/constructor.o
+
+# target to build an object file
+src/chap01/constructor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/src/chap01/constructor.cpp.o
+.PHONY : src/chap01/constructor.cpp.o
+
+src/chap01/constructor.i: src/chap01/constructor.cpp.i
+
+.PHONY : src/chap01/constructor.i
+
+# target to preprocess a source file
+src/chap01/constructor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/src/chap01/constructor.cpp.i
+.PHONY : src/chap01/constructor.cpp.i
+
+src/chap01/constructor.s: src/chap01/constructor.cpp.s
+
+.PHONY : src/chap01/constructor.s
+
+# target to generate assembly for a file
+src/chap01/constructor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/src/chap01/constructor.cpp.s
+.PHONY : src/chap01/constructor.cpp.s
+
 src/chap01/data.o: src/chap01/data.cpp.o
 
 .PHONY : src/chap01/data.o
@@ -289,6 +368,87 @@ src/chap01/data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/src/chap01/data.cpp.s
 .PHONY : src/chap01/data.cpp.s
 
+src/chap01/implicit-explcit.o: src/chap01/implicit-explcit.cpp.o
+
+.PHONY : src/chap01/implicit-explcit.o
+
+# target to build an object file
+src/chap01/implicit-explcit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implicit-explcit.dir/build.make CMakeFiles/implicit-explcit.dir/src/chap01/implicit-explcit.cpp.o
+.PHONY : src/chap01/implicit-explcit.cpp.o
+
+src/chap01/implicit-explcit.i: src/chap01/implicit-explcit.cpp.i
+
+.PHONY : src/chap01/implicit-explcit.i
+
+# target to preprocess a source file
+src/chap01/implicit-explcit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implicit-explcit.dir/build.make CMakeFiles/implicit-explcit.dir/src/chap01/implicit-explcit.cpp.i
+.PHONY : src/chap01/implicit-explcit.cpp.i
+
+src/chap01/implicit-explcit.s: src/chap01/implicit-explcit.cpp.s
+
+.PHONY : src/chap01/implicit-explcit.s
+
+# target to generate assembly for a file
+src/chap01/implicit-explcit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/implicit-explcit.dir/build.make CMakeFiles/implicit-explcit.dir/src/chap01/implicit-explcit.cpp.s
+.PHONY : src/chap01/implicit-explcit.cpp.s
+
+src/chap01/member-function.o: src/chap01/member-function.cpp.o
+
+.PHONY : src/chap01/member-function.o
+
+# target to build an object file
+src/chap01/member-function.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/src/chap01/member-function.cpp.o
+.PHONY : src/chap01/member-function.cpp.o
+
+src/chap01/member-function.i: src/chap01/member-function.cpp.i
+
+.PHONY : src/chap01/member-function.i
+
+# target to preprocess a source file
+src/chap01/member-function.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/src/chap01/member-function.cpp.i
+.PHONY : src/chap01/member-function.cpp.i
+
+src/chap01/member-function.s: src/chap01/member-function.cpp.s
+
+.PHONY : src/chap01/member-function.s
+
+# target to generate assembly for a file
+src/chap01/member-function.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/src/chap01/member-function.cpp.s
+.PHONY : src/chap01/member-function.cpp.s
+
+src/chap01/namespace.o: src/chap01/namespace.cpp.o
+
+.PHONY : src/chap01/namespace.o
+
+# target to build an object file
+src/chap01/namespace.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/src/chap01/namespace.cpp.o
+.PHONY : src/chap01/namespace.cpp.o
+
+src/chap01/namespace.i: src/chap01/namespace.cpp.i
+
+.PHONY : src/chap01/namespace.i
+
+# target to preprocess a source file
+src/chap01/namespace.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/src/chap01/namespace.cpp.i
+.PHONY : src/chap01/namespace.cpp.i
+
+src/chap01/namespace.s: src/chap01/namespace.cpp.s
+
+.PHONY : src/chap01/namespace.s
+
+# target to generate assembly for a file
+src/chap01/namespace.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/src/chap01/namespace.cpp.s
+.PHONY : src/chap01/namespace.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -300,7 +460,11 @@ help:
 	@echo "... YourLib"
 	@echo "... accessors"
 	@echo "... class"
+	@echo "... constructor"
 	@echo "... data"
+	@echo "... implicit-explcit"
+	@echo "... member-function"
+	@echo "... namespace"
 	@echo "... lib/a.o"
 	@echo "... lib/a.i"
 	@echo "... lib/a.s"
@@ -310,9 +474,21 @@ help:
 	@echo "... src/chap01/class.o"
 	@echo "... src/chap01/class.i"
 	@echo "... src/chap01/class.s"
+	@echo "... src/chap01/constructor.o"
+	@echo "... src/chap01/constructor.i"
+	@echo "... src/chap01/constructor.s"
 	@echo "... src/chap01/data.o"
 	@echo "... src/chap01/data.i"
 	@echo "... src/chap01/data.s"
+	@echo "... src/chap01/implicit-explcit.o"
+	@echo "... src/chap01/implicit-explcit.i"
+	@echo "... src/chap01/implicit-explcit.s"
+	@echo "... src/chap01/member-function.o"
+	@echo "... src/chap01/member-function.i"
+	@echo "... src/chap01/member-function.s"
+	@echo "... src/chap01/namespace.o"
+	@echo "... src/chap01/namespace.i"
+	@echo "... src/chap01/namespace.s"
 .PHONY : help
 
 

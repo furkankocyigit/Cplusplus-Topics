@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "accessors"
+			"path" : "constructor"
 		}
 	],
 	"backtrace" : 1,
@@ -39,6 +39,12 @@
 	"compileGroups" : 
 	[
 		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
 			"includes" : 
 			[
 				{
@@ -53,11 +59,15 @@
 			]
 		}
 	],
-	"id" : "accessors::@6890427a1f51a3e7e1df",
+	"id" : "constructor::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -65,8 +75,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "accessors",
-	"nameOnDisk" : "accessors",
+	"name" : "constructor",
+	"nameOnDisk" : "constructor",
 	"paths" : 
 	{
 		"build" : ".",
@@ -87,7 +97,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/chap01/accessors.cpp",
+			"path" : "src/chap01/constructor.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

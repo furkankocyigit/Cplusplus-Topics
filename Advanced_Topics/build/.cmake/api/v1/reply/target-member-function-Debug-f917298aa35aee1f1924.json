@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "data"
+			"path" : "member-function"
 		}
 	],
 	"backtrace" : 1,
@@ -39,6 +39,12 @@
 	"compileGroups" : 
 	[
 		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
 			"includes" : 
 			[
 				{
@@ -53,11 +59,15 @@
 			]
 		}
 	],
-	"id" : "data::@6890427a1f51a3e7e1df",
+	"id" : "member-function::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -65,8 +75,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "data",
-	"nameOnDisk" : "data",
+	"name" : "member-function",
+	"nameOnDisk" : "member-function",
 	"paths" : 
 	{
 		"build" : ".",
@@ -87,7 +97,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/chap01/data.cpp",
+			"path" : "src/chap01/member-function.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

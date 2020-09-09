@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/ubuntu/vcpkg/installed/x64-linux/include
 
-CXX_FLAGS = 
+CXX_FLAGS = -g
 

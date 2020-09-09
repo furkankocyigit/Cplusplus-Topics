@@ -1,1 +1,1 @@
-/usr/bin/g++-7 CMakeFiles/accessors.dir/src/chap01/accessors.cpp.o -o accessors 
+/usr/bin/g++-7 -g CMakeFiles/accessors.dir/src/chap01/accessors.cpp.o -o accessors 
