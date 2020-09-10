@@ -130,69 +130,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named namespace
+# Target rules for targets named rational2
 
 # Build rule for target.
-namespace: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 namespace
-.PHONY : namespace
+rational2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational2
+.PHONY : rational2
 
 # fast build rule for target.
-namespace/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/build
-.PHONY : namespace/fast
+rational2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational2.dir/build.make CMakeFiles/rational2.dir/build
+.PHONY : rational2/fast
 
 #=============================================================================
-# Target rules for targets named member-function
+# Target rules for targets named constructor
 
 # Build rule for target.
-member-function: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 member-function
-.PHONY : member-function
+constructor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 constructor
+.PHONY : constructor
 
 # fast build rule for target.
-member-function/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/build
-.PHONY : member-function/fast
-
-#=============================================================================
-# Target rules for targets named data
-
-# Build rule for target.
-data: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data
-.PHONY : data
-
-# fast build rule for target.
-data/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/build
-.PHONY : data/fast
-
-#=============================================================================
-# Target rules for targets named accessors
-
-# Build rule for target.
-accessors: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 accessors
-.PHONY : accessors
-
-# fast build rule for target.
-accessors/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/accessors.dir/build.make CMakeFiles/accessors.dir/build
-.PHONY : accessors/fast
-
-#=============================================================================
-# Target rules for targets named YourLib
-
-# Build rule for target.
-YourLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YourLib
-.PHONY : YourLib
-
-# fast build rule for target.
-YourLib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/YourLib.dir/build.make CMakeFiles/YourLib.dir/build
-.PHONY : YourLib/fast
+constructor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/build
+.PHONY : constructor/fast
 
 #=============================================================================
 # Target rules for targets named class
@@ -208,6 +169,84 @@ class/fast:
 .PHONY : class/fast
 
 #=============================================================================
+# Target rules for targets named YourLib
+
+# Build rule for target.
+YourLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YourLib
+.PHONY : YourLib
+
+# fast build rule for target.
+YourLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YourLib.dir/build.make CMakeFiles/YourLib.dir/build
+.PHONY : YourLib/fast
+
+#=============================================================================
+# Target rules for targets named accessors
+
+# Build rule for target.
+accessors: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 accessors
+.PHONY : accessors
+
+# fast build rule for target.
+accessors/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/accessors.dir/build.make CMakeFiles/accessors.dir/build
+.PHONY : accessors/fast
+
+#=============================================================================
+# Target rules for targets named data
+
+# Build rule for target.
+data: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data
+.PHONY : data
+
+# fast build rule for target.
+data/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/build
+.PHONY : data/fast
+
+#=============================================================================
+# Target rules for targets named incr-decr
+
+# Build rule for target.
+incr-decr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 incr-decr
+.PHONY : incr-decr
+
+# fast build rule for target.
+incr-decr/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/incr-decr.dir/build.make CMakeFiles/incr-decr.dir/build
+.PHONY : incr-decr/fast
+
+#=============================================================================
+# Target rules for targets named rational
+
+# Build rule for target.
+rational: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational
+.PHONY : rational
+
+# fast build rule for target.
+rational/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/build
+.PHONY : rational/fast
+
+#=============================================================================
+# Target rules for targets named member-function
+
+# Build rule for target.
+member-function: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 member-function
+.PHONY : member-function
+
+# fast build rule for target.
+member-function/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/build
+.PHONY : member-function/fast
+
+#=============================================================================
 # Target rules for targets named implicit-explcit
 
 # Build rule for target.
@@ -221,17 +260,17 @@ implicit-explcit/fast:
 .PHONY : implicit-explcit/fast
 
 #=============================================================================
-# Target rules for targets named constructor
+# Target rules for targets named namespace
 
 # Build rule for target.
-constructor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 constructor
-.PHONY : constructor
+namespace: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 namespace
+.PHONY : namespace
 
 # fast build rule for target.
-constructor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/build
-.PHONY : constructor/fast
+namespace/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/build
+.PHONY : namespace/fast
 
 lib/a.o: lib/a.cpp.o
 
@@ -395,6 +434,33 @@ src/chap01/implicit-explcit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/implicit-explcit.dir/build.make CMakeFiles/implicit-explcit.dir/src/chap01/implicit-explcit.cpp.s
 .PHONY : src/chap01/implicit-explcit.cpp.s
 
+src/chap01/incr-decr.o: src/chap01/incr-decr.cpp.o
+
+.PHONY : src/chap01/incr-decr.o
+
+# target to build an object file
+src/chap01/incr-decr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/incr-decr.dir/build.make CMakeFiles/incr-decr.dir/src/chap01/incr-decr.cpp.o
+.PHONY : src/chap01/incr-decr.cpp.o
+
+src/chap01/incr-decr.i: src/chap01/incr-decr.cpp.i
+
+.PHONY : src/chap01/incr-decr.i
+
+# target to preprocess a source file
+src/chap01/incr-decr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/incr-decr.dir/build.make CMakeFiles/incr-decr.dir/src/chap01/incr-decr.cpp.i
+.PHONY : src/chap01/incr-decr.cpp.i
+
+src/chap01/incr-decr.s: src/chap01/incr-decr.cpp.s
+
+.PHONY : src/chap01/incr-decr.s
+
+# target to generate assembly for a file
+src/chap01/incr-decr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/incr-decr.dir/build.make CMakeFiles/incr-decr.dir/src/chap01/incr-decr.cpp.s
+.PHONY : src/chap01/incr-decr.cpp.s
+
 src/chap01/member-function.o: src/chap01/member-function.cpp.o
 
 .PHONY : src/chap01/member-function.o
@@ -449,6 +515,60 @@ src/chap01/namespace.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/src/chap01/namespace.cpp.s
 .PHONY : src/chap01/namespace.cpp.s
 
+src/chap01/rational.o: src/chap01/rational.cpp.o
+
+.PHONY : src/chap01/rational.o
+
+# target to build an object file
+src/chap01/rational.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/src/chap01/rational.cpp.o
+.PHONY : src/chap01/rational.cpp.o
+
+src/chap01/rational.i: src/chap01/rational.cpp.i
+
+.PHONY : src/chap01/rational.i
+
+# target to preprocess a source file
+src/chap01/rational.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/src/chap01/rational.cpp.i
+.PHONY : src/chap01/rational.cpp.i
+
+src/chap01/rational.s: src/chap01/rational.cpp.s
+
+.PHONY : src/chap01/rational.s
+
+# target to generate assembly for a file
+src/chap01/rational.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/src/chap01/rational.cpp.s
+.PHONY : src/chap01/rational.cpp.s
+
+src/chap01/rational2.o: src/chap01/rational2.cpp.o
+
+.PHONY : src/chap01/rational2.o
+
+# target to build an object file
+src/chap01/rational2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational2.dir/build.make CMakeFiles/rational2.dir/src/chap01/rational2.cpp.o
+.PHONY : src/chap01/rational2.cpp.o
+
+src/chap01/rational2.i: src/chap01/rational2.cpp.i
+
+.PHONY : src/chap01/rational2.i
+
+# target to preprocess a source file
+src/chap01/rational2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational2.dir/build.make CMakeFiles/rational2.dir/src/chap01/rational2.cpp.i
+.PHONY : src/chap01/rational2.cpp.i
+
+src/chap01/rational2.s: src/chap01/rational2.cpp.s
+
+.PHONY : src/chap01/rational2.s
+
+# target to generate assembly for a file
+src/chap01/rational2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational2.dir/build.make CMakeFiles/rational2.dir/src/chap01/rational2.cpp.s
+.PHONY : src/chap01/rational2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -463,8 +583,11 @@ help:
 	@echo "... constructor"
 	@echo "... data"
 	@echo "... implicit-explcit"
+	@echo "... incr-decr"
 	@echo "... member-function"
 	@echo "... namespace"
+	@echo "... rational"
+	@echo "... rational2"
 	@echo "... lib/a.o"
 	@echo "... lib/a.i"
 	@echo "... lib/a.s"
@@ -483,12 +606,21 @@ help:
 	@echo "... src/chap01/implicit-explcit.o"
 	@echo "... src/chap01/implicit-explcit.i"
 	@echo "... src/chap01/implicit-explcit.s"
+	@echo "... src/chap01/incr-decr.o"
+	@echo "... src/chap01/incr-decr.i"
+	@echo "... src/chap01/incr-decr.s"
 	@echo "... src/chap01/member-function.o"
 	@echo "... src/chap01/member-function.i"
 	@echo "... src/chap01/member-function.s"
 	@echo "... src/chap01/namespace.o"
 	@echo "... src/chap01/namespace.i"
 	@echo "... src/chap01/namespace.s"
+	@echo "... src/chap01/rational.o"
+	@echo "... src/chap01/rational.i"
+	@echo "... src/chap01/rational.s"
+	@echo "... src/chap01/rational2.o"
+	@echo "... src/chap01/rational2.i"
+	@echo "... src/chap01/rational2.s"
 .PHONY : help
 
 
