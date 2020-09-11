@@ -1,57 +1,77 @@
 [
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/rational2.dir/src/chap01/rational2.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/rational2.cpp",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/rational2.dir/src/chap01/rational2.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/rational2.cpp",
   "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/rational2.cpp"
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/constructor.dir/src/chap01/constructor.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/constructor.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/constructor.cpp"
-},
-{
-  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/class.dir/src/chap01/class.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/class.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/class.cpp"
-},
-{
-  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/YourLib.dir/lib/a.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/a.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/a.cpp"
-},
-{
-  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/accessors.dir/src/chap01/accessors.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/accessors.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/accessors.cpp"
-},
-{
-  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/data.dir/src/chap01/data.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/data.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/data.cpp"
-},
-{
-  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/incr-decr.dir/src/chap01/incr-decr.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/incr-decr.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/incr-decr.cpp"
-},
-{
-  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/rational.dir/src/chap01/rational.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/rational.cpp",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/rational.dir/src/chap01/rational.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/rational.cpp",
   "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/rational.cpp"
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/member-function.dir/src/chap01/member-function.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/member-function.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/member-function.cpp"
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/numword-test.dir/src/chap01/numword-test.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/numword-test.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/numword-test.cpp"
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/implicit-explcit.dir/src/chap01/implicit-explcit.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/implicit-explcit.cpp",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/new-delete.dir/src/chap01/new-delete.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/new-delete.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/new-delete.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/class.dir/src/chap01/class.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/class.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/class.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/accessors.dir/src/chap01/accessors.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/accessors.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/accessors.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/constructor.dir/src/chap01/constructor.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/constructor.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/constructor.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/MyLib.dir/lib/a.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/a.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/a.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/MyLib.dir/lib/numword.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/numword.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/numword.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/data.dir/src/chap01/data.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/data.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/data.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/functors.dir/src/chap01/functors.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/functors.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/functors.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/implicit-explcit.dir/src/chap01/implicit-explcit.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/implicit-explcit.cpp",
   "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/implicit-explcit.cpp"
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/namespace.dir/src/chap01/namespace.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/namespace.cpp",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/namespace.dir/src/chap01/namespace.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/namespace.cpp",
   "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/namespace.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/incr-decr.dir/src/chap01/incr-decr.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/incr-decr.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/incr-decr.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/member-function.dir/src/chap01/member-function.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/member-function.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/member-function.cpp"
 }
 ]

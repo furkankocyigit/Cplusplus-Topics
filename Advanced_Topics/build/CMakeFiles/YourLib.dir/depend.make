@@ -3,3 +3,6 @@
 
 CMakeFiles/YourLib.dir/lib/a.cpp.o: ../lib/a.cpp
 
+CMakeFiles/YourLib.dir/lib/numword.cpp.o: ../lib/numword.cpp
+CMakeFiles/YourLib.dir/lib/numword.cpp.o: ../lib/numword.h
+

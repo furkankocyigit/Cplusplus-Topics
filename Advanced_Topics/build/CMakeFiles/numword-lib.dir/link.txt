@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnumword-lib.a CMakeFiles/numword-lib.dir/src/chap01/numword.cpp.o
+/usr/bin/ranlib libnumword-lib.a

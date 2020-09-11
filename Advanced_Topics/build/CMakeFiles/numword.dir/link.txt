@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -g CMakeFiles/numword.dir/src/chap01/numword.cpp.o -o numword  libYourLib.a 

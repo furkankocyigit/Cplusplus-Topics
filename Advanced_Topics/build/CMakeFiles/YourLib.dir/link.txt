@@ -1,2 +1,2 @@
-/usr/bin/ar qc libYourLib.a CMakeFiles/YourLib.dir/lib/a.cpp.o
+/usr/bin/ar qc libYourLib.a CMakeFiles/YourLib.dir/lib/a.cpp.o CMakeFiles/YourLib.dir/lib/numword.cpp.o
 /usr/bin/ranlib libYourLib.a

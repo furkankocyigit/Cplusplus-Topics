@@ -143,17 +143,43 @@ rational2/fast:
 .PHONY : rational2/fast
 
 #=============================================================================
-# Target rules for targets named constructor
+# Target rules for targets named rational
 
 # Build rule for target.
-constructor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 constructor
-.PHONY : constructor
+rational: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational
+.PHONY : rational
 
 # fast build rule for target.
-constructor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/build
-.PHONY : constructor/fast
+rational/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/build
+.PHONY : rational/fast
+
+#=============================================================================
+# Target rules for targets named numword-test
+
+# Build rule for target.
+numword-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 numword-test
+.PHONY : numword-test
+
+# fast build rule for target.
+numword-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numword-test.dir/build.make CMakeFiles/numword-test.dir/build
+.PHONY : numword-test/fast
+
+#=============================================================================
+# Target rules for targets named new-delete
+
+# Build rule for target.
+new-delete: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 new-delete
+.PHONY : new-delete
+
+# fast build rule for target.
+new-delete/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new-delete.dir/build.make CMakeFiles/new-delete.dir/build
+.PHONY : new-delete/fast
 
 #=============================================================================
 # Target rules for targets named class
@@ -169,19 +195,6 @@ class/fast:
 .PHONY : class/fast
 
 #=============================================================================
-# Target rules for targets named YourLib
-
-# Build rule for target.
-YourLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 YourLib
-.PHONY : YourLib
-
-# fast build rule for target.
-YourLib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/YourLib.dir/build.make CMakeFiles/YourLib.dir/build
-.PHONY : YourLib/fast
-
-#=============================================================================
 # Target rules for targets named accessors
 
 # Build rule for target.
@@ -193,6 +206,32 @@ accessors: cmake_check_build_system
 accessors/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/accessors.dir/build.make CMakeFiles/accessors.dir/build
 .PHONY : accessors/fast
+
+#=============================================================================
+# Target rules for targets named constructor
+
+# Build rule for target.
+constructor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 constructor
+.PHONY : constructor
+
+# fast build rule for target.
+constructor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/build
+.PHONY : constructor/fast
+
+#=============================================================================
+# Target rules for targets named MyLib
+
+# Build rule for target.
+MyLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyLib
+.PHONY : MyLib
+
+# fast build rule for target.
+MyLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/build
+.PHONY : MyLib/fast
 
 #=============================================================================
 # Target rules for targets named data
@@ -208,43 +247,17 @@ data/fast:
 .PHONY : data/fast
 
 #=============================================================================
-# Target rules for targets named incr-decr
+# Target rules for targets named functors
 
 # Build rule for target.
-incr-decr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 incr-decr
-.PHONY : incr-decr
+functors: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functors
+.PHONY : functors
 
 # fast build rule for target.
-incr-decr/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/incr-decr.dir/build.make CMakeFiles/incr-decr.dir/build
-.PHONY : incr-decr/fast
-
-#=============================================================================
-# Target rules for targets named rational
-
-# Build rule for target.
-rational: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational
-.PHONY : rational
-
-# fast build rule for target.
-rational/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/build
-.PHONY : rational/fast
-
-#=============================================================================
-# Target rules for targets named member-function
-
-# Build rule for target.
-member-function: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 member-function
-.PHONY : member-function
-
-# fast build rule for target.
-member-function/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/build
-.PHONY : member-function/fast
+functors/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functors.dir/build.make CMakeFiles/functors.dir/build
+.PHONY : functors/fast
 
 #=============================================================================
 # Target rules for targets named implicit-explcit
@@ -272,13 +285,39 @@ namespace/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/build
 .PHONY : namespace/fast
 
+#=============================================================================
+# Target rules for targets named incr-decr
+
+# Build rule for target.
+incr-decr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 incr-decr
+.PHONY : incr-decr
+
+# fast build rule for target.
+incr-decr/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/incr-decr.dir/build.make CMakeFiles/incr-decr.dir/build
+.PHONY : incr-decr/fast
+
+#=============================================================================
+# Target rules for targets named member-function
+
+# Build rule for target.
+member-function: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 member-function
+.PHONY : member-function
+
+# fast build rule for target.
+member-function/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/build
+.PHONY : member-function/fast
+
 lib/a.o: lib/a.cpp.o
 
 .PHONY : lib/a.o
 
 # target to build an object file
 lib/a.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/YourLib.dir/build.make CMakeFiles/YourLib.dir/lib/a.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/a.cpp.o
 .PHONY : lib/a.cpp.o
 
 lib/a.i: lib/a.cpp.i
@@ -287,7 +326,7 @@ lib/a.i: lib/a.cpp.i
 
 # target to preprocess a source file
 lib/a.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/YourLib.dir/build.make CMakeFiles/YourLib.dir/lib/a.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/a.cpp.i
 .PHONY : lib/a.cpp.i
 
 lib/a.s: lib/a.cpp.s
@@ -296,8 +335,35 @@ lib/a.s: lib/a.cpp.s
 
 # target to generate assembly for a file
 lib/a.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/YourLib.dir/build.make CMakeFiles/YourLib.dir/lib/a.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/a.cpp.s
 .PHONY : lib/a.cpp.s
+
+lib/numword.o: lib/numword.cpp.o
+
+.PHONY : lib/numword.o
+
+# target to build an object file
+lib/numword.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/numword.cpp.o
+.PHONY : lib/numword.cpp.o
+
+lib/numword.i: lib/numword.cpp.i
+
+.PHONY : lib/numword.i
+
+# target to preprocess a source file
+lib/numword.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/numword.cpp.i
+.PHONY : lib/numword.cpp.i
+
+lib/numword.s: lib/numword.cpp.s
+
+.PHONY : lib/numword.s
+
+# target to generate assembly for a file
+lib/numword.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/numword.cpp.s
+.PHONY : lib/numword.cpp.s
 
 src/chap01/accessors.o: src/chap01/accessors.cpp.o
 
@@ -407,6 +473,33 @@ src/chap01/data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/src/chap01/data.cpp.s
 .PHONY : src/chap01/data.cpp.s
 
+src/chap01/functors.o: src/chap01/functors.cpp.o
+
+.PHONY : src/chap01/functors.o
+
+# target to build an object file
+src/chap01/functors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functors.dir/build.make CMakeFiles/functors.dir/src/chap01/functors.cpp.o
+.PHONY : src/chap01/functors.cpp.o
+
+src/chap01/functors.i: src/chap01/functors.cpp.i
+
+.PHONY : src/chap01/functors.i
+
+# target to preprocess a source file
+src/chap01/functors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functors.dir/build.make CMakeFiles/functors.dir/src/chap01/functors.cpp.i
+.PHONY : src/chap01/functors.cpp.i
+
+src/chap01/functors.s: src/chap01/functors.cpp.s
+
+.PHONY : src/chap01/functors.s
+
+# target to generate assembly for a file
+src/chap01/functors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functors.dir/build.make CMakeFiles/functors.dir/src/chap01/functors.cpp.s
+.PHONY : src/chap01/functors.cpp.s
+
 src/chap01/implicit-explcit.o: src/chap01/implicit-explcit.cpp.o
 
 .PHONY : src/chap01/implicit-explcit.o
@@ -515,6 +608,60 @@ src/chap01/namespace.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/src/chap01/namespace.cpp.s
 .PHONY : src/chap01/namespace.cpp.s
 
+src/chap01/new-delete.o: src/chap01/new-delete.cpp.o
+
+.PHONY : src/chap01/new-delete.o
+
+# target to build an object file
+src/chap01/new-delete.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new-delete.dir/build.make CMakeFiles/new-delete.dir/src/chap01/new-delete.cpp.o
+.PHONY : src/chap01/new-delete.cpp.o
+
+src/chap01/new-delete.i: src/chap01/new-delete.cpp.i
+
+.PHONY : src/chap01/new-delete.i
+
+# target to preprocess a source file
+src/chap01/new-delete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new-delete.dir/build.make CMakeFiles/new-delete.dir/src/chap01/new-delete.cpp.i
+.PHONY : src/chap01/new-delete.cpp.i
+
+src/chap01/new-delete.s: src/chap01/new-delete.cpp.s
+
+.PHONY : src/chap01/new-delete.s
+
+# target to generate assembly for a file
+src/chap01/new-delete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new-delete.dir/build.make CMakeFiles/new-delete.dir/src/chap01/new-delete.cpp.s
+.PHONY : src/chap01/new-delete.cpp.s
+
+src/chap01/numword-test.o: src/chap01/numword-test.cpp.o
+
+.PHONY : src/chap01/numword-test.o
+
+# target to build an object file
+src/chap01/numword-test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numword-test.dir/build.make CMakeFiles/numword-test.dir/src/chap01/numword-test.cpp.o
+.PHONY : src/chap01/numword-test.cpp.o
+
+src/chap01/numword-test.i: src/chap01/numword-test.cpp.i
+
+.PHONY : src/chap01/numword-test.i
+
+# target to preprocess a source file
+src/chap01/numword-test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numword-test.dir/build.make CMakeFiles/numword-test.dir/src/chap01/numword-test.cpp.i
+.PHONY : src/chap01/numword-test.cpp.i
+
+src/chap01/numword-test.s: src/chap01/numword-test.cpp.s
+
+.PHONY : src/chap01/numword-test.s
+
+# target to generate assembly for a file
+src/chap01/numword-test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numword-test.dir/build.make CMakeFiles/numword-test.dir/src/chap01/numword-test.cpp.s
+.PHONY : src/chap01/numword-test.cpp.s
+
 src/chap01/rational.o: src/chap01/rational.cpp.o
 
 .PHONY : src/chap01/rational.o
@@ -577,20 +724,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... YourLib"
+	@echo "... MyLib"
 	@echo "... accessors"
 	@echo "... class"
 	@echo "... constructor"
 	@echo "... data"
+	@echo "... functors"
 	@echo "... implicit-explcit"
 	@echo "... incr-decr"
 	@echo "... member-function"
 	@echo "... namespace"
+	@echo "... new-delete"
+	@echo "... numword-test"
 	@echo "... rational"
 	@echo "... rational2"
 	@echo "... lib/a.o"
 	@echo "... lib/a.i"
 	@echo "... lib/a.s"
+	@echo "... lib/numword.o"
+	@echo "... lib/numword.i"
+	@echo "... lib/numword.s"
 	@echo "... src/chap01/accessors.o"
 	@echo "... src/chap01/accessors.i"
 	@echo "... src/chap01/accessors.s"
@@ -603,6 +756,9 @@ help:
 	@echo "... src/chap01/data.o"
 	@echo "... src/chap01/data.i"
 	@echo "... src/chap01/data.s"
+	@echo "... src/chap01/functors.o"
+	@echo "... src/chap01/functors.i"
+	@echo "... src/chap01/functors.s"
 	@echo "... src/chap01/implicit-explcit.o"
 	@echo "... src/chap01/implicit-explcit.i"
 	@echo "... src/chap01/implicit-explcit.s"
@@ -615,6 +771,12 @@ help:
 	@echo "... src/chap01/namespace.o"
 	@echo "... src/chap01/namespace.i"
 	@echo "... src/chap01/namespace.s"
+	@echo "... src/chap01/new-delete.o"
+	@echo "... src/chap01/new-delete.i"
+	@echo "... src/chap01/new-delete.s"
+	@echo "... src/chap01/numword-test.o"
+	@echo "... src/chap01/numword-test.i"
+	@echo "... src/chap01/numword-test.s"
 	@echo "... src/chap01/rational.o"
 	@echo "... src/chap01/rational.i"
 	@echo "... src/chap01/rational.s"

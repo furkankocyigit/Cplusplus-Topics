@@ -21,7 +21,7 @@ num & num::operator ++ (){
 }
 
 // post-increment
-num  num::operator ++ (int){
+num num::operator ++ (int){
     cout << "post-increment: ";
     num temp = *this;
     value += 1;

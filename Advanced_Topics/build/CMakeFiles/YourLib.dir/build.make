@@ -89,17 +89,32 @@ CMakeFiles/YourLib.dir/lib/a.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/YourLib.dir/lib/a.cpp.s"
 	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/a.cpp -o CMakeFiles/YourLib.dir/lib/a.cpp.s
 
+CMakeFiles/YourLib.dir/lib/numword.cpp.o: CMakeFiles/YourLib.dir/flags.make
+CMakeFiles/YourLib.dir/lib/numword.cpp.o: ../lib/numword.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/YourLib.dir/lib/numword.cpp.o"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/YourLib.dir/lib/numword.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/numword.cpp
+
+CMakeFiles/YourLib.dir/lib/numword.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/YourLib.dir/lib/numword.cpp.i"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/numword.cpp > CMakeFiles/YourLib.dir/lib/numword.cpp.i
+
+CMakeFiles/YourLib.dir/lib/numword.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/YourLib.dir/lib/numword.cpp.s"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/numword.cpp -o CMakeFiles/YourLib.dir/lib/numword.cpp.s
+
 # Object files for target YourLib
 YourLib_OBJECTS = \
-"CMakeFiles/YourLib.dir/lib/a.cpp.o"
+"CMakeFiles/YourLib.dir/lib/a.cpp.o" \
+"CMakeFiles/YourLib.dir/lib/numword.cpp.o"
 
 # External object files for target YourLib
 YourLib_EXTERNAL_OBJECTS =
 
 libYourLib.a: CMakeFiles/YourLib.dir/lib/a.cpp.o
+libYourLib.a: CMakeFiles/YourLib.dir/lib/numword.cpp.o
 libYourLib.a: CMakeFiles/YourLib.dir/build.make
 libYourLib.a: CMakeFiles/YourLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libYourLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libYourLib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/YourLib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/YourLib.dir/link.txt --verbose=$(VERBOSE)
 

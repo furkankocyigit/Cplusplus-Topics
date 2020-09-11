@@ -6,11 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/rational2.cpp
-cstdio
--
-iostream
--
-string
--
-

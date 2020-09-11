@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++-7
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ubuntu/vcpkg/installed/x64-linux/include
+CXX_INCLUDES = -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include
 
 CXX_FLAGS = -g
 

@@ -18,9 +18,7 @@ project(MyProject VERSION 1.0.0)
 
 #target_include_directories(MyProject PRIVATE ${Python2_INCLUDE_DIRS} ${Python2_NumPy_INCLUDE_DIRS})
 #target_link_libraries(MyProject Python2::Python Python2::NumPy)
-include_directories(
-    "/home/ubuntu/vcpkg/installed/x64-linux/include"
-)
+
 
 
 
@@ -49,20 +47,36 @@ include_directories(
 
 
 
+set (LIB_DIR lib)
+set (INCLUDE_DIR include)
+
+include_directories("${LIB_DIR}")
+include_directories("${INCLUDE_DIR}")
+include_directories(
+    "/home/ubuntu/vcpkg/installed/x64-linux/include"
+
+    # "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include"
+    # "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib"
+)
 
 
 file( GLOB LIB_SOURCES lib/*.cpp )
 file( GLOB LIB_HEADERS lib/*.h )
-add_library( YourLib ${LIB_SOURCES} ${LIB_HEADERS} )
+add_library( MyLib ${LIB_SOURCES} ${LIB_HEADERS} )
 
-
+# add_library(numword-lib 
+#                     src/chap01/numword.h 
+#                     src/chap01/numword.cpp
+#                     )
 
 file(GLOB sources /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/*.cpp)
 foreach(sourceFile ${sources})
     get_filename_component(name ${sourceFile} NAME_WLE)
     MESSAGE(STATUS "New executable ==> " ${name})
     add_executable(${name} ${sourceFile} )
+    #target_link_libraries(${name} YourLib)
     
 endforeach(sourceFile ${sources})
 
+target_link_libraries(numword-test MyLib)
 
