@@ -45,6 +45,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/lambda-02.dir/DependInfo.cmake"
   "CMakeFiles/vector-test.dir/DependInfo.cmake"
   "CMakeFiles/rational-03.dir/DependInfo.cmake"
   "CMakeFiles/weak.dir/DependInfo.cmake"
@@ -52,8 +53,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/incr-decr.dir/DependInfo.cmake"
   "CMakeFiles/member-function.dir/DependInfo.cmake"
   "CMakeFiles/deneme.dir/DependInfo.cmake"
+  "CMakeFiles/lambda.dir/DependInfo.cmake"
   "CMakeFiles/data.dir/DependInfo.cmake"
   "CMakeFiles/MyLib.dir/DependInfo.cmake"
+  "CMakeFiles/poly-lambda.dir/DependInfo.cmake"
   "CMakeFiles/constructor.dir/DependInfo.cmake"
   "CMakeFiles/unique.dir/DependInfo.cmake"
   "CMakeFiles/rvlaue-lvalue.dir/DependInfo.cmake"

@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -g CMakeFiles/lambda-02.dir/src/chap05/lambda-02.cpp.o -o lambda-02  libMyLib.a 

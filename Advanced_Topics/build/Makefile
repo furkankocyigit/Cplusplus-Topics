@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named lambda-02
+
+# Build rule for target.
+lambda-02: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lambda-02
+.PHONY : lambda-02
+
+# fast build rule for target.
+lambda-02/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda-02.dir/build.make CMakeFiles/lambda-02.dir/build
+.PHONY : lambda-02/fast
+
+#=============================================================================
 # Target rules for targets named vector-test
 
 # Build rule for target.
@@ -221,6 +234,19 @@ deneme/fast:
 .PHONY : deneme/fast
 
 #=============================================================================
+# Target rules for targets named lambda
+
+# Build rule for target.
+lambda: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lambda
+.PHONY : lambda
+
+# fast build rule for target.
+lambda/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda.dir/build.make CMakeFiles/lambda.dir/build
+.PHONY : lambda/fast
+
+#=============================================================================
 # Target rules for targets named data
 
 # Build rule for target.
@@ -245,6 +271,19 @@ MyLib: cmake_check_build_system
 MyLib/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/build
 .PHONY : MyLib/fast
+
+#=============================================================================
+# Target rules for targets named poly-lambda
+
+# Build rule for target.
+poly-lambda: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poly-lambda
+.PHONY : poly-lambda
+
+# fast build rule for target.
+poly-lambda/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly-lambda.dir/build.make CMakeFiles/poly-lambda.dir/build
+.PHONY : poly-lambda/fast
 
 #=============================================================================
 # Target rules for targets named constructor
@@ -1183,6 +1222,87 @@ src/chap04/vector-test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector-test.dir/build.make CMakeFiles/vector-test.dir/src/chap04/vector-test.cpp.s
 .PHONY : src/chap04/vector-test.cpp.s
 
+src/chap05/lambda-02.o: src/chap05/lambda-02.cpp.o
+
+.PHONY : src/chap05/lambda-02.o
+
+# target to build an object file
+src/chap05/lambda-02.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda-02.dir/build.make CMakeFiles/lambda-02.dir/src/chap05/lambda-02.cpp.o
+.PHONY : src/chap05/lambda-02.cpp.o
+
+src/chap05/lambda-02.i: src/chap05/lambda-02.cpp.i
+
+.PHONY : src/chap05/lambda-02.i
+
+# target to preprocess a source file
+src/chap05/lambda-02.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda-02.dir/build.make CMakeFiles/lambda-02.dir/src/chap05/lambda-02.cpp.i
+.PHONY : src/chap05/lambda-02.cpp.i
+
+src/chap05/lambda-02.s: src/chap05/lambda-02.cpp.s
+
+.PHONY : src/chap05/lambda-02.s
+
+# target to generate assembly for a file
+src/chap05/lambda-02.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda-02.dir/build.make CMakeFiles/lambda-02.dir/src/chap05/lambda-02.cpp.s
+.PHONY : src/chap05/lambda-02.cpp.s
+
+src/chap05/lambda.o: src/chap05/lambda.cpp.o
+
+.PHONY : src/chap05/lambda.o
+
+# target to build an object file
+src/chap05/lambda.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda.dir/build.make CMakeFiles/lambda.dir/src/chap05/lambda.cpp.o
+.PHONY : src/chap05/lambda.cpp.o
+
+src/chap05/lambda.i: src/chap05/lambda.cpp.i
+
+.PHONY : src/chap05/lambda.i
+
+# target to preprocess a source file
+src/chap05/lambda.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda.dir/build.make CMakeFiles/lambda.dir/src/chap05/lambda.cpp.i
+.PHONY : src/chap05/lambda.cpp.i
+
+src/chap05/lambda.s: src/chap05/lambda.cpp.s
+
+.PHONY : src/chap05/lambda.s
+
+# target to generate assembly for a file
+src/chap05/lambda.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda.dir/build.make CMakeFiles/lambda.dir/src/chap05/lambda.cpp.s
+.PHONY : src/chap05/lambda.cpp.s
+
+src/chap05/poly-lambda.o: src/chap05/poly-lambda.cpp.o
+
+.PHONY : src/chap05/poly-lambda.o
+
+# target to build an object file
+src/chap05/poly-lambda.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly-lambda.dir/build.make CMakeFiles/poly-lambda.dir/src/chap05/poly-lambda.cpp.o
+.PHONY : src/chap05/poly-lambda.cpp.o
+
+src/chap05/poly-lambda.i: src/chap05/poly-lambda.cpp.i
+
+.PHONY : src/chap05/poly-lambda.i
+
+# target to preprocess a source file
+src/chap05/poly-lambda.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly-lambda.dir/build.make CMakeFiles/poly-lambda.dir/src/chap05/poly-lambda.cpp.i
+.PHONY : src/chap05/poly-lambda.cpp.i
+
+src/chap05/poly-lambda.s: src/chap05/poly-lambda.cpp.s
+
+.PHONY : src/chap05/poly-lambda.s
+
+# target to generate assembly for a file
+src/chap05/poly-lambda.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly-lambda.dir/build.make CMakeFiles/poly-lambda.dir/src/chap05/poly-lambda.cpp.s
+.PHONY : src/chap05/poly-lambda.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1201,10 +1321,13 @@ help:
 	@echo "... functors"
 	@echo "... implicit-explcit"
 	@echo "... incr-decr"
+	@echo "... lambda"
+	@echo "... lambda-02"
 	@echo "... member-function"
 	@echo "... namespace"
 	@echo "... new-delete"
 	@echo "... numword-test"
+	@echo "... poly-lambda"
 	@echo "... rational"
 	@echo "... rational-01"
 	@echo "... rational-02"
@@ -1297,6 +1420,15 @@ help:
 	@echo "... src/chap04/vector-test.o"
 	@echo "... src/chap04/vector-test.i"
 	@echo "... src/chap04/vector-test.s"
+	@echo "... src/chap05/lambda-02.o"
+	@echo "... src/chap05/lambda-02.i"
+	@echo "... src/chap05/lambda-02.s"
+	@echo "... src/chap05/lambda.o"
+	@echo "... src/chap05/lambda.i"
+	@echo "... src/chap05/lambda.s"
+	@echo "... src/chap05/poly-lambda.o"
+	@echo "... src/chap05/poly-lambda.i"
+	@echo "... src/chap05/poly-lambda.s"
 .PHONY : help
 
 

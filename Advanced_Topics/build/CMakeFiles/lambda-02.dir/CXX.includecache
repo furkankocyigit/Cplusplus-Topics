@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap05/lambda-02.cpp
+cstdio
+-
+locale
+-
+algorithm
+-
+string.h
+-
+

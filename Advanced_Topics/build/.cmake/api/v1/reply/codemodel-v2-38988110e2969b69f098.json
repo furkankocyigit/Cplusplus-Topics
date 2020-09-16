@@ -38,7 +38,10 @@
 						21,
 						22,
 						23,
-						24
+						24,
+						25,
+						26,
+						27
 					]
 				}
 			],
@@ -77,7 +80,10 @@
 						21,
 						22,
 						23,
-						24
+						24,
+						25,
+						26,
+						27
 					]
 				}
 			],
@@ -155,6 +161,20 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "lambda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lambda-Debug-abaf35c2e3ec6c97140e.json",
+					"name" : "lambda",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lambda-02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lambda-02-Debug-03e97ce3b311302cf9bc.json",
+					"name" : "lambda-02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "member-function::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-member-function-Debug-09d3ac4e9d7a0f35ea3e.json",
 					"name" : "member-function",
@@ -179,6 +199,13 @@
 					"id" : "numword-test::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-numword-test-Debug-d4d18c81fc7ee4382eb0.json",
 					"name" : "numword-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "poly-lambda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-poly-lambda-Debug-0a3a0c1d2f098df2042e.json",
+					"name" : "poly-lambda",
 					"projectIndex" : 0
 				},
 				{

@@ -1,4 +1,5 @@
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/lambda-02.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/vector-test.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/rational-03.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/weak.dir
@@ -7,8 +8,10 @@
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/member-function.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/deneme.dir
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/lambda.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/data.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/MyLib.dir
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/poly-lambda.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/constructor.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/unique.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/rvlaue-lvalue.dir

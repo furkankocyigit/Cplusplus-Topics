@@ -72,6 +72,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/lambda-02.dir/all
 all: CMakeFiles/vector-test.dir/all
 all: CMakeFiles/rational-03.dir/all
 all: CMakeFiles/weak.dir/all
@@ -79,8 +80,10 @@ all: CMakeFiles/functors.dir/all
 all: CMakeFiles/incr-decr.dir/all
 all: CMakeFiles/member-function.dir/all
 all: CMakeFiles/deneme.dir/all
+all: CMakeFiles/lambda.dir/all
 all: CMakeFiles/data.dir/all
 all: CMakeFiles/MyLib.dir/all
+all: CMakeFiles/poly-lambda.dir/all
 all: CMakeFiles/constructor.dir/all
 all: CMakeFiles/unique.dir/all
 all: CMakeFiles/rvlaue-lvalue.dir/all
@@ -106,6 +109,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/lambda-02.dir/clean
 clean: CMakeFiles/vector-test.dir/clean
 clean: CMakeFiles/rational-03.dir/clean
 clean: CMakeFiles/weak.dir/clean
@@ -113,8 +117,10 @@ clean: CMakeFiles/functors.dir/clean
 clean: CMakeFiles/incr-decr.dir/clean
 clean: CMakeFiles/member-function.dir/clean
 clean: CMakeFiles/deneme.dir/clean
+clean: CMakeFiles/lambda.dir/clean
 clean: CMakeFiles/data.dir/clean
 clean: CMakeFiles/MyLib.dir/clean
+clean: CMakeFiles/poly-lambda.dir/clean
 clean: CMakeFiles/constructor.dir/clean
 clean: CMakeFiles/unique.dir/clean
 clean: CMakeFiles/rvlaue-lvalue.dir/clean
@@ -135,13 +141,40 @@ clean: CMakeFiles/rational-02.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/lambda-02.dir
+
+# All Build rule for target.
+CMakeFiles/lambda-02.dir/all: CMakeFiles/MyLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda-02.dir/build.make CMakeFiles/lambda-02.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda-02.dir/build.make CMakeFiles/lambda-02.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=25,26 "Built target lambda-02"
+.PHONY : CMakeFiles/lambda-02.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lambda-02.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lambda-02.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles 0
+.PHONY : CMakeFiles/lambda-02.dir/rule
+
+# Convenience name for target.
+lambda-02: CMakeFiles/lambda-02.dir/rule
+
+.PHONY : lambda-02
+
+# clean rule for target.
+CMakeFiles/lambda-02.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda-02.dir/build.make CMakeFiles/lambda-02.dir/clean
+.PHONY : CMakeFiles/lambda-02.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/vector-test.dir
 
 # All Build rule for target.
 CMakeFiles/vector-test.dir/all: CMakeFiles/MyLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector-test.dir/build.make CMakeFiles/vector-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector-test.dir/build.make CMakeFiles/vector-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=49,50 "Built target vector-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=55,56 "Built target vector-test"
 .PHONY : CMakeFiles/vector-test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -168,7 +201,7 @@ CMakeFiles/vector-test.dir/clean:
 CMakeFiles/rational-03.dir/all: CMakeFiles/MyLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-03.dir/build.make CMakeFiles/rational-03.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-03.dir/build.make CMakeFiles/rational-03.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=37,38 "Built target rational-03"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=43,44 "Built target rational-03"
 .PHONY : CMakeFiles/rational-03.dir/all
 
 # Build rule for subdir invocation for target.
@@ -195,7 +228,7 @@ CMakeFiles/rational-03.dir/clean:
 CMakeFiles/weak.dir/all: CMakeFiles/MyLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak.dir/build.make CMakeFiles/weak.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak.dir/build.make CMakeFiles/weak.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=51,52 "Built target weak"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=57,58 "Built target weak"
 .PHONY : CMakeFiles/weak.dir/all
 
 # Build rule for subdir invocation for target.
@@ -276,7 +309,7 @@ CMakeFiles/incr-decr.dir/clean:
 CMakeFiles/member-function.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=23,24 "Built target member-function"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=27,28 "Built target member-function"
 .PHONY : CMakeFiles/member-function.dir/all
 
 # Build rule for subdir invocation for target.
@@ -322,6 +355,33 @@ deneme: CMakeFiles/deneme.dir/rule
 CMakeFiles/deneme.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/deneme.dir/build.make CMakeFiles/deneme.dir/clean
 .PHONY : CMakeFiles/deneme.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/lambda.dir
+
+# All Build rule for target.
+CMakeFiles/lambda.dir/all: CMakeFiles/MyLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda.dir/build.make CMakeFiles/lambda.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda.dir/build.make CMakeFiles/lambda.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=23,24 "Built target lambda"
+.PHONY : CMakeFiles/lambda.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/lambda.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lambda.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles 0
+.PHONY : CMakeFiles/lambda.dir/rule
+
+# Convenience name for target.
+lambda: CMakeFiles/lambda.dir/rule
+
+.PHONY : lambda
+
+# clean rule for target.
+CMakeFiles/lambda.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda.dir/build.make CMakeFiles/lambda.dir/clean
+.PHONY : CMakeFiles/lambda.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/data.dir
@@ -378,6 +438,33 @@ CMakeFiles/MyLib.dir/clean:
 .PHONY : CMakeFiles/MyLib.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/poly-lambda.dir
+
+# All Build rule for target.
+CMakeFiles/poly-lambda.dir/all: CMakeFiles/MyLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly-lambda.dir/build.make CMakeFiles/poly-lambda.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly-lambda.dir/build.make CMakeFiles/poly-lambda.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=35,36 "Built target poly-lambda"
+.PHONY : CMakeFiles/poly-lambda.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/poly-lambda.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/poly-lambda.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles 0
+.PHONY : CMakeFiles/poly-lambda.dir/rule
+
+# Convenience name for target.
+poly-lambda: CMakeFiles/poly-lambda.dir/rule
+
+.PHONY : poly-lambda
+
+# clean rule for target.
+CMakeFiles/poly-lambda.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly-lambda.dir/build.make CMakeFiles/poly-lambda.dir/clean
+.PHONY : CMakeFiles/poly-lambda.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/constructor.dir
 
 # All Build rule for target.
@@ -411,7 +498,7 @@ CMakeFiles/constructor.dir/clean:
 CMakeFiles/unique.dir/all: CMakeFiles/MyLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique.dir/build.make CMakeFiles/unique.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique.dir/build.make CMakeFiles/unique.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=47,48 "Built target unique"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=53,54 "Built target unique"
 .PHONY : CMakeFiles/unique.dir/all
 
 # Build rule for subdir invocation for target.
@@ -438,7 +525,7 @@ CMakeFiles/unique.dir/clean:
 CMakeFiles/rvlaue-lvalue.dir/all: CMakeFiles/MyLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rvlaue-lvalue.dir/build.make CMakeFiles/rvlaue-lvalue.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rvlaue-lvalue.dir/build.make CMakeFiles/rvlaue-lvalue.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=41,42 "Built target rvlaue-lvalue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=47,48 "Built target rvlaue-lvalue"
 .PHONY : CMakeFiles/rvlaue-lvalue.dir/all
 
 # Build rule for subdir invocation for target.
@@ -546,7 +633,7 @@ CMakeFiles/implicit-explcit.dir/clean:
 CMakeFiles/namespace.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/namespace.dir/build.make CMakeFiles/namespace.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=25,26 "Built target namespace"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=29,30 "Built target namespace"
 .PHONY : CMakeFiles/namespace.dir/all
 
 # Build rule for subdir invocation for target.
@@ -573,7 +660,7 @@ CMakeFiles/namespace.dir/clean:
 CMakeFiles/rational-01.dir/all: CMakeFiles/MyLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-01.dir/build.make CMakeFiles/rational-01.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-01.dir/build.make CMakeFiles/rational-01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=33,34 "Built target rational-01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=39,40 "Built target rational-01"
 .PHONY : CMakeFiles/rational-01.dir/all
 
 # Build rule for subdir invocation for target.
@@ -600,7 +687,7 @@ CMakeFiles/rational-01.dir/clean:
 CMakeFiles/new-delete.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/new-delete.dir/build.make CMakeFiles/new-delete.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/new-delete.dir/build.make CMakeFiles/new-delete.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=27,28 "Built target new-delete"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=31,32 "Built target new-delete"
 .PHONY : CMakeFiles/new-delete.dir/all
 
 # Build rule for subdir invocation for target.
@@ -654,7 +741,7 @@ CMakeFiles/custom-deleter.dir/clean:
 CMakeFiles/numword-test.dir/all: CMakeFiles/MyLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/numword-test.dir/build.make CMakeFiles/numword-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/numword-test.dir/build.make CMakeFiles/numword-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=29,30 "Built target numword-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=33,34 "Built target numword-test"
 .PHONY : CMakeFiles/numword-test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -681,7 +768,7 @@ CMakeFiles/numword-test.dir/clean:
 CMakeFiles/rational.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=31,32 "Built target rational"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=37,38 "Built target rational"
 .PHONY : CMakeFiles/rational.dir/all
 
 # Build rule for subdir invocation for target.
@@ -708,7 +795,7 @@ CMakeFiles/rational.dir/clean:
 CMakeFiles/simple-inheritance.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple-inheritance.dir/build.make CMakeFiles/simple-inheritance.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple-inheritance.dir/build.make CMakeFiles/simple-inheritance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=45,46 "Built target simple-inheritance"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=51,52 "Built target simple-inheritance"
 .PHONY : CMakeFiles/simple-inheritance.dir/all
 
 # Build rule for subdir invocation for target.
@@ -735,7 +822,7 @@ CMakeFiles/simple-inheritance.dir/clean:
 CMakeFiles/rational2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational2.dir/build.make CMakeFiles/rational2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational2.dir/build.make CMakeFiles/rational2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=39,40 "Built target rational2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=45,46 "Built target rational2"
 .PHONY : CMakeFiles/rational2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -762,7 +849,7 @@ CMakeFiles/rational2.dir/clean:
 CMakeFiles/shared.dir/all: CMakeFiles/MyLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared.dir/build.make CMakeFiles/shared.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared.dir/build.make CMakeFiles/shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=43,44 "Built target shared"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=49,50 "Built target shared"
 .PHONY : CMakeFiles/shared.dir/all
 
 # Build rule for subdir invocation for target.
@@ -789,7 +876,7 @@ CMakeFiles/shared.dir/clean:
 CMakeFiles/rational-02.dir/all: CMakeFiles/MyLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-02.dir/build.make CMakeFiles/rational-02.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-02.dir/build.make CMakeFiles/rational-02.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=35,36 "Built target rational-02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=41,42 "Built target rational-02"
 .PHONY : CMakeFiles/rational-02.dir/all
 
 # Build rule for subdir invocation for target.
