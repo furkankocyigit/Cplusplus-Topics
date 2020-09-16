@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -g CMakeFiles/shared.dir/src/chap03/shared.cpp.o -o shared  libMyLib.a 

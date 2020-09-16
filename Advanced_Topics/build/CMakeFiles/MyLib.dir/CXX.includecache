@@ -6,23 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/a.cpp
-
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/numword.cpp
-numword.h
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/numword.h
-
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/numword.h
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/strc.cpp
+strc.h
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/strc.h
 cstdio
--
-cstdlib
 -
 cstring
 -
-cstdint
+utility
 -
-cmath
+memory
 -
-new
+
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/strc.h
+cstddef
 -
 

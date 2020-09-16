@@ -80,3 +80,30 @@ endforeach(sourceFile ${sources})
 
 target_link_libraries(numword-test MyLib)
 
+file(GLOB sources /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap02/*.cpp)
+foreach(sourceFile ${sources})
+    get_filename_component(name ${sourceFile} NAME_WLE)
+    MESSAGE(STATUS "New executable ==> " ${name})
+    add_executable(${name} ${sourceFile} )
+    #target_link_libraries(${name} YourLib)
+    
+endforeach(sourceFile ${sources})
+
+file(GLOB sources /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap03/*.cpp)
+foreach(sourceFile ${sources})
+    get_filename_component(name ${sourceFile} NAME_WLE)
+    MESSAGE(STATUS "New executable ==> " ${name})
+    add_executable(${name} ${sourceFile} )
+    target_link_libraries(${name} MyLib)
+    
+endforeach(sourceFile ${sources})
+#target_link_libraries(unique MyLib)
+
+file(GLOB sources /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap04/*.cpp)
+foreach(sourceFile ${sources})
+    get_filename_component(name ${sourceFile} NAME_WLE)
+    MESSAGE(STATUS "New executable ==> " ${name})
+    add_executable(${name} ${sourceFile} )
+    target_link_libraries(${name} MyLib)
+    
+endforeach(sourceFile ${sources})

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/strc.h
+cstddef
+-
+
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap03/custom-deleter.cpp
+cstdio
+-
+memory
+-
+strc.h
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap03/strc.h
+

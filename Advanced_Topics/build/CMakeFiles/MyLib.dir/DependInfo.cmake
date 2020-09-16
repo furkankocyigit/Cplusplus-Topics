@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/a.cpp" "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/MyLib.dir/lib/a.cpp.o"
   "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/numword.cpp" "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/MyLib.dir/lib/numword.cpp.o"
+  "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/strc.cpp" "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/MyLib.dir/lib/strc.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

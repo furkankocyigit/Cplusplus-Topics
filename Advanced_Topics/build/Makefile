@@ -75,17 +75,6 @@ CMAKE_BINARY_DIR = /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -96,6 +85,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -130,108 +130,95 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rational2
+# Target rules for targets named vector-test
 
 # Build rule for target.
-rational2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational2
-.PHONY : rational2
+vector-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vector-test
+.PHONY : vector-test
 
 # fast build rule for target.
-rational2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational2.dir/build.make CMakeFiles/rational2.dir/build
-.PHONY : rational2/fast
+vector-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector-test.dir/build.make CMakeFiles/vector-test.dir/build
+.PHONY : vector-test/fast
 
 #=============================================================================
-# Target rules for targets named rational
+# Target rules for targets named rational-03
 
 # Build rule for target.
-rational: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational
-.PHONY : rational
+rational-03: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational-03
+.PHONY : rational-03
 
 # fast build rule for target.
-rational/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/build
-.PHONY : rational/fast
+rational-03/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-03.dir/build.make CMakeFiles/rational-03.dir/build
+.PHONY : rational-03/fast
 
 #=============================================================================
-# Target rules for targets named numword-test
+# Target rules for targets named weak
 
 # Build rule for target.
-numword-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 numword-test
-.PHONY : numword-test
+weak: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 weak
+.PHONY : weak
 
 # fast build rule for target.
-numword-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/numword-test.dir/build.make CMakeFiles/numword-test.dir/build
-.PHONY : numword-test/fast
+weak/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak.dir/build.make CMakeFiles/weak.dir/build
+.PHONY : weak/fast
 
 #=============================================================================
-# Target rules for targets named new-delete
+# Target rules for targets named functors
 
 # Build rule for target.
-new-delete: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 new-delete
-.PHONY : new-delete
+functors: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functors
+.PHONY : functors
 
 # fast build rule for target.
-new-delete/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/new-delete.dir/build.make CMakeFiles/new-delete.dir/build
-.PHONY : new-delete/fast
+functors/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functors.dir/build.make CMakeFiles/functors.dir/build
+.PHONY : functors/fast
 
 #=============================================================================
-# Target rules for targets named class
+# Target rules for targets named incr-decr
 
 # Build rule for target.
-class: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 class
-.PHONY : class
+incr-decr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 incr-decr
+.PHONY : incr-decr
 
 # fast build rule for target.
-class/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/class.dir/build.make CMakeFiles/class.dir/build
-.PHONY : class/fast
+incr-decr/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/incr-decr.dir/build.make CMakeFiles/incr-decr.dir/build
+.PHONY : incr-decr/fast
 
 #=============================================================================
-# Target rules for targets named accessors
+# Target rules for targets named member-function
 
 # Build rule for target.
-accessors: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 accessors
-.PHONY : accessors
+member-function: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 member-function
+.PHONY : member-function
 
 # fast build rule for target.
-accessors/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/accessors.dir/build.make CMakeFiles/accessors.dir/build
-.PHONY : accessors/fast
+member-function/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/build
+.PHONY : member-function/fast
 
 #=============================================================================
-# Target rules for targets named constructor
+# Target rules for targets named deneme
 
 # Build rule for target.
-constructor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 constructor
-.PHONY : constructor
+deneme: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deneme
+.PHONY : deneme
 
 # fast build rule for target.
-constructor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/build
-.PHONY : constructor/fast
-
-#=============================================================================
-# Target rules for targets named MyLib
-
-# Build rule for target.
-MyLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyLib
-.PHONY : MyLib
-
-# fast build rule for target.
-MyLib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/build
-.PHONY : MyLib/fast
+deneme/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deneme.dir/build.make CMakeFiles/deneme.dir/build
+.PHONY : deneme/fast
 
 #=============================================================================
 # Target rules for targets named data
@@ -247,17 +234,69 @@ data/fast:
 .PHONY : data/fast
 
 #=============================================================================
-# Target rules for targets named functors
+# Target rules for targets named MyLib
 
 # Build rule for target.
-functors: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functors
-.PHONY : functors
+MyLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyLib
+.PHONY : MyLib
 
 # fast build rule for target.
-functors/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/functors.dir/build.make CMakeFiles/functors.dir/build
-.PHONY : functors/fast
+MyLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/build
+.PHONY : MyLib/fast
+
+#=============================================================================
+# Target rules for targets named constructor
+
+# Build rule for target.
+constructor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 constructor
+.PHONY : constructor
+
+# fast build rule for target.
+constructor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/build
+.PHONY : constructor/fast
+
+#=============================================================================
+# Target rules for targets named unique
+
+# Build rule for target.
+unique: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unique
+.PHONY : unique
+
+# fast build rule for target.
+unique/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique.dir/build.make CMakeFiles/unique.dir/build
+.PHONY : unique/fast
+
+#=============================================================================
+# Target rules for targets named accessors
+
+# Build rule for target.
+accessors: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 accessors
+.PHONY : accessors
+
+# fast build rule for target.
+accessors/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/accessors.dir/build.make CMakeFiles/accessors.dir/build
+.PHONY : accessors/fast
+
+#=============================================================================
+# Target rules for targets named class
+
+# Build rule for target.
+class: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 class
+.PHONY : class
+
+# fast build rule for target.
+class/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/class.dir/build.make CMakeFiles/class.dir/build
+.PHONY : class/fast
 
 #=============================================================================
 # Target rules for targets named implicit-explcit
@@ -286,30 +325,121 @@ namespace/fast:
 .PHONY : namespace/fast
 
 #=============================================================================
-# Target rules for targets named incr-decr
+# Target rules for targets named rational-01
 
 # Build rule for target.
-incr-decr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 incr-decr
-.PHONY : incr-decr
+rational-01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational-01
+.PHONY : rational-01
 
 # fast build rule for target.
-incr-decr/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/incr-decr.dir/build.make CMakeFiles/incr-decr.dir/build
-.PHONY : incr-decr/fast
+rational-01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-01.dir/build.make CMakeFiles/rational-01.dir/build
+.PHONY : rational-01/fast
 
 #=============================================================================
-# Target rules for targets named member-function
+# Target rules for targets named new-delete
 
 # Build rule for target.
-member-function: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 member-function
-.PHONY : member-function
+new-delete: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 new-delete
+.PHONY : new-delete
 
 # fast build rule for target.
-member-function/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/member-function.dir/build.make CMakeFiles/member-function.dir/build
-.PHONY : member-function/fast
+new-delete/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new-delete.dir/build.make CMakeFiles/new-delete.dir/build
+.PHONY : new-delete/fast
+
+#=============================================================================
+# Target rules for targets named custom-deleter
+
+# Build rule for target.
+custom-deleter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 custom-deleter
+.PHONY : custom-deleter
+
+# fast build rule for target.
+custom-deleter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom-deleter.dir/build.make CMakeFiles/custom-deleter.dir/build
+.PHONY : custom-deleter/fast
+
+#=============================================================================
+# Target rules for targets named numword-test
+
+# Build rule for target.
+numword-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 numword-test
+.PHONY : numword-test
+
+# fast build rule for target.
+numword-test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numword-test.dir/build.make CMakeFiles/numword-test.dir/build
+.PHONY : numword-test/fast
+
+#=============================================================================
+# Target rules for targets named rational
+
+# Build rule for target.
+rational: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational
+.PHONY : rational
+
+# fast build rule for target.
+rational/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/build
+.PHONY : rational/fast
+
+#=============================================================================
+# Target rules for targets named simple-inheritance
+
+# Build rule for target.
+simple-inheritance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple-inheritance
+.PHONY : simple-inheritance
+
+# fast build rule for target.
+simple-inheritance/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple-inheritance.dir/build.make CMakeFiles/simple-inheritance.dir/build
+.PHONY : simple-inheritance/fast
+
+#=============================================================================
+# Target rules for targets named rational2
+
+# Build rule for target.
+rational2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational2
+.PHONY : rational2
+
+# fast build rule for target.
+rational2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational2.dir/build.make CMakeFiles/rational2.dir/build
+.PHONY : rational2/fast
+
+#=============================================================================
+# Target rules for targets named shared
+
+# Build rule for target.
+shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shared
+.PHONY : shared
+
+# fast build rule for target.
+shared/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared.dir/build.make CMakeFiles/shared.dir/build
+.PHONY : shared/fast
+
+#=============================================================================
+# Target rules for targets named rational-02
+
+# Build rule for target.
+rational-02: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational-02
+.PHONY : rational-02
+
+# fast build rule for target.
+rational-02/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-02.dir/build.make CMakeFiles/rational-02.dir/build
+.PHONY : rational-02/fast
 
 lib/a.o: lib/a.cpp.o
 
@@ -364,6 +494,33 @@ lib/numword.s: lib/numword.cpp.s
 lib/numword.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/numword.cpp.s
 .PHONY : lib/numword.cpp.s
+
+lib/strc.o: lib/strc.cpp.o
+
+.PHONY : lib/strc.o
+
+# target to build an object file
+lib/strc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/strc.cpp.o
+.PHONY : lib/strc.cpp.o
+
+lib/strc.i: lib/strc.cpp.i
+
+.PHONY : lib/strc.i
+
+# target to preprocess a source file
+lib/strc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/strc.cpp.i
+.PHONY : lib/strc.cpp.i
+
+lib/strc.s: lib/strc.cpp.s
+
+.PHONY : lib/strc.s
+
+# target to generate assembly for a file
+lib/strc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/strc.cpp.s
+.PHONY : lib/strc.cpp.s
 
 src/chap01/accessors.o: src/chap01/accessors.cpp.o
 
@@ -472,6 +629,33 @@ src/chap01/data.s: src/chap01/data.cpp.s
 src/chap01/data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data.dir/build.make CMakeFiles/data.dir/src/chap01/data.cpp.s
 .PHONY : src/chap01/data.cpp.s
+
+src/chap01/deneme.o: src/chap01/deneme.cpp.o
+
+.PHONY : src/chap01/deneme.o
+
+# target to build an object file
+src/chap01/deneme.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deneme.dir/build.make CMakeFiles/deneme.dir/src/chap01/deneme.cpp.o
+.PHONY : src/chap01/deneme.cpp.o
+
+src/chap01/deneme.i: src/chap01/deneme.cpp.i
+
+.PHONY : src/chap01/deneme.i
+
+# target to preprocess a source file
+src/chap01/deneme.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deneme.dir/build.make CMakeFiles/deneme.dir/src/chap01/deneme.cpp.i
+.PHONY : src/chap01/deneme.cpp.i
+
+src/chap01/deneme.s: src/chap01/deneme.cpp.s
+
+.PHONY : src/chap01/deneme.s
+
+# target to generate assembly for a file
+src/chap01/deneme.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deneme.dir/build.make CMakeFiles/deneme.dir/src/chap01/deneme.cpp.s
+.PHONY : src/chap01/deneme.cpp.s
 
 src/chap01/functors.o: src/chap01/functors.cpp.o
 
@@ -716,6 +900,249 @@ src/chap01/rational2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational2.dir/build.make CMakeFiles/rational2.dir/src/chap01/rational2.cpp.s
 .PHONY : src/chap01/rational2.cpp.s
 
+src/chap02/simple-inheritance.o: src/chap02/simple-inheritance.cpp.o
+
+.PHONY : src/chap02/simple-inheritance.o
+
+# target to build an object file
+src/chap02/simple-inheritance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple-inheritance.dir/build.make CMakeFiles/simple-inheritance.dir/src/chap02/simple-inheritance.cpp.o
+.PHONY : src/chap02/simple-inheritance.cpp.o
+
+src/chap02/simple-inheritance.i: src/chap02/simple-inheritance.cpp.i
+
+.PHONY : src/chap02/simple-inheritance.i
+
+# target to preprocess a source file
+src/chap02/simple-inheritance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple-inheritance.dir/build.make CMakeFiles/simple-inheritance.dir/src/chap02/simple-inheritance.cpp.i
+.PHONY : src/chap02/simple-inheritance.cpp.i
+
+src/chap02/simple-inheritance.s: src/chap02/simple-inheritance.cpp.s
+
+.PHONY : src/chap02/simple-inheritance.s
+
+# target to generate assembly for a file
+src/chap02/simple-inheritance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple-inheritance.dir/build.make CMakeFiles/simple-inheritance.dir/src/chap02/simple-inheritance.cpp.s
+.PHONY : src/chap02/simple-inheritance.cpp.s
+
+src/chap03/custom-deleter.o: src/chap03/custom-deleter.cpp.o
+
+.PHONY : src/chap03/custom-deleter.o
+
+# target to build an object file
+src/chap03/custom-deleter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom-deleter.dir/build.make CMakeFiles/custom-deleter.dir/src/chap03/custom-deleter.cpp.o
+.PHONY : src/chap03/custom-deleter.cpp.o
+
+src/chap03/custom-deleter.i: src/chap03/custom-deleter.cpp.i
+
+.PHONY : src/chap03/custom-deleter.i
+
+# target to preprocess a source file
+src/chap03/custom-deleter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom-deleter.dir/build.make CMakeFiles/custom-deleter.dir/src/chap03/custom-deleter.cpp.i
+.PHONY : src/chap03/custom-deleter.cpp.i
+
+src/chap03/custom-deleter.s: src/chap03/custom-deleter.cpp.s
+
+.PHONY : src/chap03/custom-deleter.s
+
+# target to generate assembly for a file
+src/chap03/custom-deleter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom-deleter.dir/build.make CMakeFiles/custom-deleter.dir/src/chap03/custom-deleter.cpp.s
+.PHONY : src/chap03/custom-deleter.cpp.s
+
+src/chap03/shared.o: src/chap03/shared.cpp.o
+
+.PHONY : src/chap03/shared.o
+
+# target to build an object file
+src/chap03/shared.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared.dir/build.make CMakeFiles/shared.dir/src/chap03/shared.cpp.o
+.PHONY : src/chap03/shared.cpp.o
+
+src/chap03/shared.i: src/chap03/shared.cpp.i
+
+.PHONY : src/chap03/shared.i
+
+# target to preprocess a source file
+src/chap03/shared.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared.dir/build.make CMakeFiles/shared.dir/src/chap03/shared.cpp.i
+.PHONY : src/chap03/shared.cpp.i
+
+src/chap03/shared.s: src/chap03/shared.cpp.s
+
+.PHONY : src/chap03/shared.s
+
+# target to generate assembly for a file
+src/chap03/shared.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared.dir/build.make CMakeFiles/shared.dir/src/chap03/shared.cpp.s
+.PHONY : src/chap03/shared.cpp.s
+
+src/chap03/unique.o: src/chap03/unique.cpp.o
+
+.PHONY : src/chap03/unique.o
+
+# target to build an object file
+src/chap03/unique.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique.dir/build.make CMakeFiles/unique.dir/src/chap03/unique.cpp.o
+.PHONY : src/chap03/unique.cpp.o
+
+src/chap03/unique.i: src/chap03/unique.cpp.i
+
+.PHONY : src/chap03/unique.i
+
+# target to preprocess a source file
+src/chap03/unique.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique.dir/build.make CMakeFiles/unique.dir/src/chap03/unique.cpp.i
+.PHONY : src/chap03/unique.cpp.i
+
+src/chap03/unique.s: src/chap03/unique.cpp.s
+
+.PHONY : src/chap03/unique.s
+
+# target to generate assembly for a file
+src/chap03/unique.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique.dir/build.make CMakeFiles/unique.dir/src/chap03/unique.cpp.s
+.PHONY : src/chap03/unique.cpp.s
+
+src/chap03/weak.o: src/chap03/weak.cpp.o
+
+.PHONY : src/chap03/weak.o
+
+# target to build an object file
+src/chap03/weak.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak.dir/build.make CMakeFiles/weak.dir/src/chap03/weak.cpp.o
+.PHONY : src/chap03/weak.cpp.o
+
+src/chap03/weak.i: src/chap03/weak.cpp.i
+
+.PHONY : src/chap03/weak.i
+
+# target to preprocess a source file
+src/chap03/weak.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak.dir/build.make CMakeFiles/weak.dir/src/chap03/weak.cpp.i
+.PHONY : src/chap03/weak.cpp.i
+
+src/chap03/weak.s: src/chap03/weak.cpp.s
+
+.PHONY : src/chap03/weak.s
+
+# target to generate assembly for a file
+src/chap03/weak.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak.dir/build.make CMakeFiles/weak.dir/src/chap03/weak.cpp.s
+.PHONY : src/chap03/weak.cpp.s
+
+src/chap04/rational-01.o: src/chap04/rational-01.cpp.o
+
+.PHONY : src/chap04/rational-01.o
+
+# target to build an object file
+src/chap04/rational-01.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-01.dir/build.make CMakeFiles/rational-01.dir/src/chap04/rational-01.cpp.o
+.PHONY : src/chap04/rational-01.cpp.o
+
+src/chap04/rational-01.i: src/chap04/rational-01.cpp.i
+
+.PHONY : src/chap04/rational-01.i
+
+# target to preprocess a source file
+src/chap04/rational-01.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-01.dir/build.make CMakeFiles/rational-01.dir/src/chap04/rational-01.cpp.i
+.PHONY : src/chap04/rational-01.cpp.i
+
+src/chap04/rational-01.s: src/chap04/rational-01.cpp.s
+
+.PHONY : src/chap04/rational-01.s
+
+# target to generate assembly for a file
+src/chap04/rational-01.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-01.dir/build.make CMakeFiles/rational-01.dir/src/chap04/rational-01.cpp.s
+.PHONY : src/chap04/rational-01.cpp.s
+
+src/chap04/rational-02.o: src/chap04/rational-02.cpp.o
+
+.PHONY : src/chap04/rational-02.o
+
+# target to build an object file
+src/chap04/rational-02.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-02.dir/build.make CMakeFiles/rational-02.dir/src/chap04/rational-02.cpp.o
+.PHONY : src/chap04/rational-02.cpp.o
+
+src/chap04/rational-02.i: src/chap04/rational-02.cpp.i
+
+.PHONY : src/chap04/rational-02.i
+
+# target to preprocess a source file
+src/chap04/rational-02.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-02.dir/build.make CMakeFiles/rational-02.dir/src/chap04/rational-02.cpp.i
+.PHONY : src/chap04/rational-02.cpp.i
+
+src/chap04/rational-02.s: src/chap04/rational-02.cpp.s
+
+.PHONY : src/chap04/rational-02.s
+
+# target to generate assembly for a file
+src/chap04/rational-02.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-02.dir/build.make CMakeFiles/rational-02.dir/src/chap04/rational-02.cpp.s
+.PHONY : src/chap04/rational-02.cpp.s
+
+src/chap04/rational-03.o: src/chap04/rational-03.cpp.o
+
+.PHONY : src/chap04/rational-03.o
+
+# target to build an object file
+src/chap04/rational-03.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-03.dir/build.make CMakeFiles/rational-03.dir/src/chap04/rational-03.cpp.o
+.PHONY : src/chap04/rational-03.cpp.o
+
+src/chap04/rational-03.i: src/chap04/rational-03.cpp.i
+
+.PHONY : src/chap04/rational-03.i
+
+# target to preprocess a source file
+src/chap04/rational-03.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-03.dir/build.make CMakeFiles/rational-03.dir/src/chap04/rational-03.cpp.i
+.PHONY : src/chap04/rational-03.cpp.i
+
+src/chap04/rational-03.s: src/chap04/rational-03.cpp.s
+
+.PHONY : src/chap04/rational-03.s
+
+# target to generate assembly for a file
+src/chap04/rational-03.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-03.dir/build.make CMakeFiles/rational-03.dir/src/chap04/rational-03.cpp.s
+.PHONY : src/chap04/rational-03.cpp.s
+
+src/chap04/vector-test.o: src/chap04/vector-test.cpp.o
+
+.PHONY : src/chap04/vector-test.o
+
+# target to build an object file
+src/chap04/vector-test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector-test.dir/build.make CMakeFiles/vector-test.dir/src/chap04/vector-test.cpp.o
+.PHONY : src/chap04/vector-test.cpp.o
+
+src/chap04/vector-test.i: src/chap04/vector-test.cpp.i
+
+.PHONY : src/chap04/vector-test.i
+
+# target to preprocess a source file
+src/chap04/vector-test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector-test.dir/build.make CMakeFiles/vector-test.dir/src/chap04/vector-test.cpp.i
+.PHONY : src/chap04/vector-test.cpp.i
+
+src/chap04/vector-test.s: src/chap04/vector-test.cpp.s
+
+.PHONY : src/chap04/vector-test.s
+
+# target to generate assembly for a file
+src/chap04/vector-test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector-test.dir/build.make CMakeFiles/vector-test.dir/src/chap04/vector-test.cpp.s
+.PHONY : src/chap04/vector-test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -728,7 +1155,9 @@ help:
 	@echo "... accessors"
 	@echo "... class"
 	@echo "... constructor"
+	@echo "... custom-deleter"
 	@echo "... data"
+	@echo "... deneme"
 	@echo "... functors"
 	@echo "... implicit-explcit"
 	@echo "... incr-decr"
@@ -737,13 +1166,24 @@ help:
 	@echo "... new-delete"
 	@echo "... numword-test"
 	@echo "... rational"
+	@echo "... rational-01"
+	@echo "... rational-02"
+	@echo "... rational-03"
 	@echo "... rational2"
+	@echo "... shared"
+	@echo "... simple-inheritance"
+	@echo "... unique"
+	@echo "... vector-test"
+	@echo "... weak"
 	@echo "... lib/a.o"
 	@echo "... lib/a.i"
 	@echo "... lib/a.s"
 	@echo "... lib/numword.o"
 	@echo "... lib/numword.i"
 	@echo "... lib/numword.s"
+	@echo "... lib/strc.o"
+	@echo "... lib/strc.i"
+	@echo "... lib/strc.s"
 	@echo "... src/chap01/accessors.o"
 	@echo "... src/chap01/accessors.i"
 	@echo "... src/chap01/accessors.s"
@@ -756,6 +1196,9 @@ help:
 	@echo "... src/chap01/data.o"
 	@echo "... src/chap01/data.i"
 	@echo "... src/chap01/data.s"
+	@echo "... src/chap01/deneme.o"
+	@echo "... src/chap01/deneme.i"
+	@echo "... src/chap01/deneme.s"
 	@echo "... src/chap01/functors.o"
 	@echo "... src/chap01/functors.i"
 	@echo "... src/chap01/functors.s"
@@ -783,6 +1226,33 @@ help:
 	@echo "... src/chap01/rational2.o"
 	@echo "... src/chap01/rational2.i"
 	@echo "... src/chap01/rational2.s"
+	@echo "... src/chap02/simple-inheritance.o"
+	@echo "... src/chap02/simple-inheritance.i"
+	@echo "... src/chap02/simple-inheritance.s"
+	@echo "... src/chap03/custom-deleter.o"
+	@echo "... src/chap03/custom-deleter.i"
+	@echo "... src/chap03/custom-deleter.s"
+	@echo "... src/chap03/shared.o"
+	@echo "... src/chap03/shared.i"
+	@echo "... src/chap03/shared.s"
+	@echo "... src/chap03/unique.o"
+	@echo "... src/chap03/unique.i"
+	@echo "... src/chap03/unique.s"
+	@echo "... src/chap03/weak.o"
+	@echo "... src/chap03/weak.i"
+	@echo "... src/chap03/weak.s"
+	@echo "... src/chap04/rational-01.o"
+	@echo "... src/chap04/rational-01.i"
+	@echo "... src/chap04/rational-01.s"
+	@echo "... src/chap04/rational-02.o"
+	@echo "... src/chap04/rational-02.i"
+	@echo "... src/chap04/rational-02.s"
+	@echo "... src/chap04/rational-03.o"
+	@echo "... src/chap04/rational-03.i"
+	@echo "... src/chap04/rational-03.s"
+	@echo "... src/chap04/vector-test.o"
+	@echo "... src/chap04/vector-test.i"
+	@echo "... src/chap04/vector-test.s"
 .PHONY : help
 
 

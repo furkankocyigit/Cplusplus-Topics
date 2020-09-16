@@ -6,3 +6,7 @@
 
 #IncludeRegexTransform: 
 
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/functors.cpp
+cstdio
+-
+

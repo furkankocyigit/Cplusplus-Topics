@@ -6,3 +6,6 @@ CMakeFiles/MyLib.dir/lib/a.cpp.o: ../lib/a.cpp
 CMakeFiles/MyLib.dir/lib/numword.cpp.o: ../lib/numword.cpp
 CMakeFiles/MyLib.dir/lib/numword.cpp.o: ../lib/numword.h
 
+CMakeFiles/MyLib.dir/lib/strc.cpp.o: ../lib/strc.cpp
+CMakeFiles/MyLib.dir/lib/strc.cpp.o: ../lib/strc.h
+
