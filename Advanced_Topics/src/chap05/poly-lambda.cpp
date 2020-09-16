@@ -9,6 +9,7 @@ int main() {
     auto x = fp(n);
 
     cout << "value of x: " << x << " type of x: " << typeid(x).name() << endl;
+    cout<<"\nfurkan\n";
 
     return 0;
 
