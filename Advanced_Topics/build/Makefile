@@ -273,6 +273,19 @@ unique/fast:
 .PHONY : unique/fast
 
 #=============================================================================
+# Target rules for targets named rvlaue-lvalue
+
+# Build rule for target.
+rvlaue-lvalue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rvlaue-lvalue
+.PHONY : rvlaue-lvalue
+
+# fast build rule for target.
+rvlaue-lvalue/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rvlaue-lvalue.dir/build.make CMakeFiles/rvlaue-lvalue.dir/build
+.PHONY : rvlaue-lvalue/fast
+
+#=============================================================================
 # Target rules for targets named accessors
 
 # Build rule for target.
@@ -1116,6 +1129,33 @@ src/chap04/rational-03.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-03.dir/build.make CMakeFiles/rational-03.dir/src/chap04/rational-03.cpp.s
 .PHONY : src/chap04/rational-03.cpp.s
 
+src/chap04/rvlaue-lvalue.o: src/chap04/rvlaue-lvalue.cpp.o
+
+.PHONY : src/chap04/rvlaue-lvalue.o
+
+# target to build an object file
+src/chap04/rvlaue-lvalue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rvlaue-lvalue.dir/build.make CMakeFiles/rvlaue-lvalue.dir/src/chap04/rvlaue-lvalue.cpp.o
+.PHONY : src/chap04/rvlaue-lvalue.cpp.o
+
+src/chap04/rvlaue-lvalue.i: src/chap04/rvlaue-lvalue.cpp.i
+
+.PHONY : src/chap04/rvlaue-lvalue.i
+
+# target to preprocess a source file
+src/chap04/rvlaue-lvalue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rvlaue-lvalue.dir/build.make CMakeFiles/rvlaue-lvalue.dir/src/chap04/rvlaue-lvalue.cpp.i
+.PHONY : src/chap04/rvlaue-lvalue.cpp.i
+
+src/chap04/rvlaue-lvalue.s: src/chap04/rvlaue-lvalue.cpp.s
+
+.PHONY : src/chap04/rvlaue-lvalue.s
+
+# target to generate assembly for a file
+src/chap04/rvlaue-lvalue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rvlaue-lvalue.dir/build.make CMakeFiles/rvlaue-lvalue.dir/src/chap04/rvlaue-lvalue.cpp.s
+.PHONY : src/chap04/rvlaue-lvalue.cpp.s
+
 src/chap04/vector-test.o: src/chap04/vector-test.cpp.o
 
 .PHONY : src/chap04/vector-test.o
@@ -1170,6 +1210,7 @@ help:
 	@echo "... rational-02"
 	@echo "... rational-03"
 	@echo "... rational2"
+	@echo "... rvlaue-lvalue"
 	@echo "... shared"
 	@echo "... simple-inheritance"
 	@echo "... unique"
@@ -1250,6 +1291,9 @@ help:
 	@echo "... src/chap04/rational-03.o"
 	@echo "... src/chap04/rational-03.i"
 	@echo "... src/chap04/rational-03.s"
+	@echo "... src/chap04/rvlaue-lvalue.o"
+	@echo "... src/chap04/rvlaue-lvalue.i"
+	@echo "... src/chap04/rvlaue-lvalue.s"
 	@echo "... src/chap04/vector-test.o"
 	@echo "... src/chap04/vector-test.i"
 	@echo "... src/chap04/vector-test.s"

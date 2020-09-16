@@ -66,6 +66,11 @@
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/rvlaue-lvalue.dir/src/chap04/rvlaue-lvalue.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap04/rvlaue-lvalue.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap04/rvlaue-lvalue.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
   "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/accessors.dir/src/chap01/accessors.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/accessors.cpp",
   "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/accessors.cpp"
 },

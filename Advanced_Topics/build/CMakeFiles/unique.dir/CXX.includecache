@@ -6,3 +6,19 @@
 
 #IncludeRegexTransform: 
 
+../lib/strc.h
+cstddef
+-
+
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap03/unique.cpp
+cstdio
+-
+iostream
+-
+memory
+-
+utility
+-
+strc.h
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap03/strc.h
+
