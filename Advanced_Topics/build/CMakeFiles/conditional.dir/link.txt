@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -g CMakeFiles/conditional.dir/src/chap06/conditional.cpp.o -o conditional  libMyLib.a 

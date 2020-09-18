@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/strc.cpp
-strc.h
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/strc.h
-cstdio
--
-cstring
--
-utility
--
-memory
--
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.cpp
+BWUTest.h
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.h
 
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/strc.h
-cstddef
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.h
+cstdio
 -
 

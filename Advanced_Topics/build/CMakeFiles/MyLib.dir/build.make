@@ -76,9 +76,22 @@ include CMakeFiles/MyLib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MyLib.dir/flags.make
 
+CMakeFiles/MyLib.dir/lib/BWUTest.cpp.o: CMakeFiles/MyLib.dir/flags.make
+CMakeFiles/MyLib.dir/lib/BWUTest.cpp.o: ../lib/BWUTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyLib.dir/lib/BWUTest.cpp.o"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyLib.dir/lib/BWUTest.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.cpp
+
+CMakeFiles/MyLib.dir/lib/BWUTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyLib.dir/lib/BWUTest.cpp.i"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.cpp > CMakeFiles/MyLib.dir/lib/BWUTest.cpp.i
+
+CMakeFiles/MyLib.dir/lib/BWUTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyLib.dir/lib/BWUTest.cpp.s"
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.cpp -o CMakeFiles/MyLib.dir/lib/BWUTest.cpp.s
+
 CMakeFiles/MyLib.dir/lib/a.cpp.o: CMakeFiles/MyLib.dir/flags.make
 CMakeFiles/MyLib.dir/lib/a.cpp.o: ../lib/a.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyLib.dir/lib/a.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyLib.dir/lib/a.cpp.o"
 	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyLib.dir/lib/a.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/a.cpp
 
 CMakeFiles/MyLib.dir/lib/a.cpp.i: cmake_force
@@ -91,7 +104,7 @@ CMakeFiles/MyLib.dir/lib/a.cpp.s: cmake_force
 
 CMakeFiles/MyLib.dir/lib/numword.cpp.o: CMakeFiles/MyLib.dir/flags.make
 CMakeFiles/MyLib.dir/lib/numword.cpp.o: ../lib/numword.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyLib.dir/lib/numword.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyLib.dir/lib/numword.cpp.o"
 	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyLib.dir/lib/numword.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/numword.cpp
 
 CMakeFiles/MyLib.dir/lib/numword.cpp.i: cmake_force
@@ -104,7 +117,7 @@ CMakeFiles/MyLib.dir/lib/numword.cpp.s: cmake_force
 
 CMakeFiles/MyLib.dir/lib/strc.cpp.o: CMakeFiles/MyLib.dir/flags.make
 CMakeFiles/MyLib.dir/lib/strc.cpp.o: ../lib/strc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyLib.dir/lib/strc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyLib.dir/lib/strc.cpp.o"
 	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyLib.dir/lib/strc.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/strc.cpp
 
 CMakeFiles/MyLib.dir/lib/strc.cpp.i: cmake_force
@@ -117,6 +130,7 @@ CMakeFiles/MyLib.dir/lib/strc.cpp.s: cmake_force
 
 # Object files for target MyLib
 MyLib_OBJECTS = \
+"CMakeFiles/MyLib.dir/lib/BWUTest.cpp.o" \
 "CMakeFiles/MyLib.dir/lib/a.cpp.o" \
 "CMakeFiles/MyLib.dir/lib/numword.cpp.o" \
 "CMakeFiles/MyLib.dir/lib/strc.cpp.o"
@@ -124,12 +138,13 @@ MyLib_OBJECTS = \
 # External object files for target MyLib
 MyLib_EXTERNAL_OBJECTS =
 
+libMyLib.a: CMakeFiles/MyLib.dir/lib/BWUTest.cpp.o
 libMyLib.a: CMakeFiles/MyLib.dir/lib/a.cpp.o
 libMyLib.a: CMakeFiles/MyLib.dir/lib/numword.cpp.o
 libMyLib.a: CMakeFiles/MyLib.dir/lib/strc.cpp.o
 libMyLib.a: CMakeFiles/MyLib.dir/build.make
 libMyLib.a: CMakeFiles/MyLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libMyLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libMyLib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/MyLib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyLib.dir/link.txt --verbose=$(VERBOSE)
 

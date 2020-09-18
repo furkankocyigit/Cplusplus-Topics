@@ -1,4 +1,8 @@
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/utest.dir
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/working.dir
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/side-effects.dir
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/conditional.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/lambda-02.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/vector-test.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/rational-03.dir

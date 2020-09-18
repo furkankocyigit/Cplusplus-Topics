@@ -130,6 +130,58 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named utest
+
+# Build rule for target.
+utest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utest
+.PHONY : utest
+
+# fast build rule for target.
+utest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest.dir/build.make CMakeFiles/utest.dir/build
+.PHONY : utest/fast
+
+#=============================================================================
+# Target rules for targets named working
+
+# Build rule for target.
+working: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 working
+.PHONY : working
+
+# fast build rule for target.
+working/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/build
+.PHONY : working/fast
+
+#=============================================================================
+# Target rules for targets named side-effects
+
+# Build rule for target.
+side-effects: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 side-effects
+.PHONY : side-effects
+
+# fast build rule for target.
+side-effects/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/side-effects.dir/build.make CMakeFiles/side-effects.dir/build
+.PHONY : side-effects/fast
+
+#=============================================================================
+# Target rules for targets named conditional
+
+# Build rule for target.
+conditional: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 conditional
+.PHONY : conditional
+
+# fast build rule for target.
+conditional/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/conditional.dir/build.make CMakeFiles/conditional.dir/build
+.PHONY : conditional/fast
+
+#=============================================================================
 # Target rules for targets named lambda-02
 
 # Build rule for target.
@@ -492,6 +544,33 @@ rational-02: cmake_check_build_system
 rational-02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-02.dir/build.make CMakeFiles/rational-02.dir/build
 .PHONY : rational-02/fast
+
+lib/BWUTest.o: lib/BWUTest.cpp.o
+
+.PHONY : lib/BWUTest.o
+
+# target to build an object file
+lib/BWUTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/BWUTest.cpp.o
+.PHONY : lib/BWUTest.cpp.o
+
+lib/BWUTest.i: lib/BWUTest.cpp.i
+
+.PHONY : lib/BWUTest.i
+
+# target to preprocess a source file
+lib/BWUTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/BWUTest.cpp.i
+.PHONY : lib/BWUTest.cpp.i
+
+lib/BWUTest.s: lib/BWUTest.cpp.s
+
+.PHONY : lib/BWUTest.s
+
+# target to generate assembly for a file
+lib/BWUTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/BWUTest.cpp.s
+.PHONY : lib/BWUTest.cpp.s
 
 lib/a.o: lib/a.cpp.o
 
@@ -1303,6 +1382,114 @@ src/chap05/poly-lambda.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poly-lambda.dir/build.make CMakeFiles/poly-lambda.dir/src/chap05/poly-lambda.cpp.s
 .PHONY : src/chap05/poly-lambda.cpp.s
 
+src/chap06/conditional.o: src/chap06/conditional.cpp.o
+
+.PHONY : src/chap06/conditional.o
+
+# target to build an object file
+src/chap06/conditional.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/conditional.dir/build.make CMakeFiles/conditional.dir/src/chap06/conditional.cpp.o
+.PHONY : src/chap06/conditional.cpp.o
+
+src/chap06/conditional.i: src/chap06/conditional.cpp.i
+
+.PHONY : src/chap06/conditional.i
+
+# target to preprocess a source file
+src/chap06/conditional.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/conditional.dir/build.make CMakeFiles/conditional.dir/src/chap06/conditional.cpp.i
+.PHONY : src/chap06/conditional.cpp.i
+
+src/chap06/conditional.s: src/chap06/conditional.cpp.s
+
+.PHONY : src/chap06/conditional.s
+
+# target to generate assembly for a file
+src/chap06/conditional.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/conditional.dir/build.make CMakeFiles/conditional.dir/src/chap06/conditional.cpp.s
+.PHONY : src/chap06/conditional.cpp.s
+
+src/chap06/side-effects.o: src/chap06/side-effects.cpp.o
+
+.PHONY : src/chap06/side-effects.o
+
+# target to build an object file
+src/chap06/side-effects.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/side-effects.dir/build.make CMakeFiles/side-effects.dir/src/chap06/side-effects.cpp.o
+.PHONY : src/chap06/side-effects.cpp.o
+
+src/chap06/side-effects.i: src/chap06/side-effects.cpp.i
+
+.PHONY : src/chap06/side-effects.i
+
+# target to preprocess a source file
+src/chap06/side-effects.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/side-effects.dir/build.make CMakeFiles/side-effects.dir/src/chap06/side-effects.cpp.i
+.PHONY : src/chap06/side-effects.cpp.i
+
+src/chap06/side-effects.s: src/chap06/side-effects.cpp.s
+
+.PHONY : src/chap06/side-effects.s
+
+# target to generate assembly for a file
+src/chap06/side-effects.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/side-effects.dir/build.make CMakeFiles/side-effects.dir/src/chap06/side-effects.cpp.s
+.PHONY : src/chap06/side-effects.cpp.s
+
+src/chap06/working.o: src/chap06/working.cpp.o
+
+.PHONY : src/chap06/working.o
+
+# target to build an object file
+src/chap06/working.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/src/chap06/working.cpp.o
+.PHONY : src/chap06/working.cpp.o
+
+src/chap06/working.i: src/chap06/working.cpp.i
+
+.PHONY : src/chap06/working.i
+
+# target to preprocess a source file
+src/chap06/working.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/src/chap06/working.cpp.i
+.PHONY : src/chap06/working.cpp.i
+
+src/chap06/working.s: src/chap06/working.cpp.s
+
+.PHONY : src/chap06/working.s
+
+# target to generate assembly for a file
+src/chap06/working.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/working.dir/build.make CMakeFiles/working.dir/src/chap06/working.cpp.s
+.PHONY : src/chap06/working.cpp.s
+
+src/chap07/utest.o: src/chap07/utest.cpp.o
+
+.PHONY : src/chap07/utest.o
+
+# target to build an object file
+src/chap07/utest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest.dir/build.make CMakeFiles/utest.dir/src/chap07/utest.cpp.o
+.PHONY : src/chap07/utest.cpp.o
+
+src/chap07/utest.i: src/chap07/utest.cpp.i
+
+.PHONY : src/chap07/utest.i
+
+# target to preprocess a source file
+src/chap07/utest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest.dir/build.make CMakeFiles/utest.dir/src/chap07/utest.cpp.i
+.PHONY : src/chap07/utest.cpp.i
+
+src/chap07/utest.s: src/chap07/utest.cpp.s
+
+.PHONY : src/chap07/utest.s
+
+# target to generate assembly for a file
+src/chap07/utest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest.dir/build.make CMakeFiles/utest.dir/src/chap07/utest.cpp.s
+.PHONY : src/chap07/utest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1314,6 +1501,7 @@ help:
 	@echo "... MyLib"
 	@echo "... accessors"
 	@echo "... class"
+	@echo "... conditional"
 	@echo "... constructor"
 	@echo "... custom-deleter"
 	@echo "... data"
@@ -1335,10 +1523,16 @@ help:
 	@echo "... rational2"
 	@echo "... rvlaue-lvalue"
 	@echo "... shared"
+	@echo "... side-effects"
 	@echo "... simple-inheritance"
 	@echo "... unique"
+	@echo "... utest"
 	@echo "... vector-test"
 	@echo "... weak"
+	@echo "... working"
+	@echo "... lib/BWUTest.o"
+	@echo "... lib/BWUTest.i"
+	@echo "... lib/BWUTest.s"
 	@echo "... lib/a.o"
 	@echo "... lib/a.i"
 	@echo "... lib/a.s"
@@ -1429,6 +1623,18 @@ help:
 	@echo "... src/chap05/poly-lambda.o"
 	@echo "... src/chap05/poly-lambda.i"
 	@echo "... src/chap05/poly-lambda.s"
+	@echo "... src/chap06/conditional.o"
+	@echo "... src/chap06/conditional.i"
+	@echo "... src/chap06/conditional.s"
+	@echo "... src/chap06/side-effects.o"
+	@echo "... src/chap06/side-effects.i"
+	@echo "... src/chap06/side-effects.s"
+	@echo "... src/chap06/working.o"
+	@echo "... src/chap06/working.i"
+	@echo "... src/chap06/working.s"
+	@echo "... src/chap07/utest.o"
+	@echo "... src/chap07/utest.i"
+	@echo "... src/chap07/utest.s"
 .PHONY : help
 
 
