@@ -45,6 +45,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/utest-2.dir/DependInfo.cmake"
+  "CMakeFiles/utest.dir/DependInfo.cmake"
+  "CMakeFiles/working.dir/DependInfo.cmake"
+  "CMakeFiles/side-effects.dir/DependInfo.cmake"
+  "CMakeFiles/conditional.dir/DependInfo.cmake"
   "CMakeFiles/lambda-02.dir/DependInfo.cmake"
   "CMakeFiles/vector-test.dir/DependInfo.cmake"
   "CMakeFiles/rational-03.dir/DependInfo.cmake"
@@ -53,6 +58,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/incr-decr.dir/DependInfo.cmake"
   "CMakeFiles/member-function.dir/DependInfo.cmake"
   "CMakeFiles/deneme.dir/DependInfo.cmake"
+  "CMakeFiles/primes.dir/DependInfo.cmake"
   "CMakeFiles/lambda.dir/DependInfo.cmake"
   "CMakeFiles/data.dir/DependInfo.cmake"
   "CMakeFiles/MyLib.dir/DependInfo.cmake"

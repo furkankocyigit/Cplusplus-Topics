@@ -1,6 +1,31 @@
 [
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/utest-2.dir/src/chap08/utest-2.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap08/utest-2.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap08/utest-2.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/utest.dir/src/chap07/utest.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap07/utest.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap07/utest.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/working.dir/src/chap06/working.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap06/working.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap06/working.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/side-effects.dir/src/chap06/side-effects.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap06/side-effects.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap06/side-effects.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/conditional.dir/src/chap06/conditional.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap06/conditional.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap06/conditional.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
   "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/lambda-02.dir/src/chap05/lambda-02.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap05/lambda-02.cpp",
   "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap05/lambda-02.cpp"
 },
@@ -41,6 +66,11 @@
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/primes.dir/src/chap08/primes.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap08/primes.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap08/primes.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
   "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/lambda.dir/src/chap05/lambda.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap05/lambda.cpp",
   "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap05/lambda.cpp"
 },
@@ -51,8 +81,13 @@
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/MyLib.dir/lib/a.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/a.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/a.cpp"
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/MyLib.dir/lib/BWString.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWString.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWString.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib -I/home/ubuntu/Cplusplus-Topics/Advanced_Topics/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -g -o CMakeFiles/MyLib.dir/lib/BWUTest.cpp.o -c /home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.cpp"
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build",

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/BWUTest.h
+cstdio
+-
+
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap07/utest.cpp
+cstdio
+-
+cstring
+-
+string
+-
+BWUTest.h
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap07/BWUTest.h
+
