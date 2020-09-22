@@ -3,7 +3,7 @@
 // by Bill Weinman <http://bw.org/>
 // as of 2018-10-12
 
-#include "BWUTest.h"
+#include "BWUTest2.h"
 
 BWUTest::BWUTest( const char * tstr ) {
     init(tstr);

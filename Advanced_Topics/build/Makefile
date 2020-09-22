@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named utest-2
+
+# Build rule for target.
+utest-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utest-2
+.PHONY : utest-2
+
+# fast build rule for target.
+utest-2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest-2.dir/build.make CMakeFiles/utest-2.dir/build
+.PHONY : utest-2/fast
+
+#=============================================================================
 # Target rules for targets named utest
 
 # Build rule for target.
@@ -284,6 +297,19 @@ deneme: cmake_check_build_system
 deneme/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/deneme.dir/build.make CMakeFiles/deneme.dir/build
 .PHONY : deneme/fast
+
+#=============================================================================
+# Target rules for targets named primes
+
+# Build rule for target.
+primes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 primes
+.PHONY : primes
+
+# fast build rule for target.
+primes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/primes.dir/build.make CMakeFiles/primes.dir/build
+.PHONY : primes/fast
 
 #=============================================================================
 # Target rules for targets named lambda
@@ -545,6 +571,33 @@ rational-02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational-02.dir/build.make CMakeFiles/rational-02.dir/build
 .PHONY : rational-02/fast
 
+lib/BWString.o: lib/BWString.cpp.o
+
+.PHONY : lib/BWString.o
+
+# target to build an object file
+lib/BWString.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/BWString.cpp.o
+.PHONY : lib/BWString.cpp.o
+
+lib/BWString.i: lib/BWString.cpp.i
+
+.PHONY : lib/BWString.i
+
+# target to preprocess a source file
+lib/BWString.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/BWString.cpp.i
+.PHONY : lib/BWString.cpp.i
+
+lib/BWString.s: lib/BWString.cpp.s
+
+.PHONY : lib/BWString.s
+
+# target to generate assembly for a file
+lib/BWString.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/BWString.cpp.s
+.PHONY : lib/BWString.cpp.s
+
 lib/BWUTest.o: lib/BWUTest.cpp.o
 
 .PHONY : lib/BWUTest.o
@@ -571,33 +624,6 @@ lib/BWUTest.s: lib/BWUTest.cpp.s
 lib/BWUTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/BWUTest.cpp.s
 .PHONY : lib/BWUTest.cpp.s
-
-lib/a.o: lib/a.cpp.o
-
-.PHONY : lib/a.o
-
-# target to build an object file
-lib/a.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/a.cpp.o
-.PHONY : lib/a.cpp.o
-
-lib/a.i: lib/a.cpp.i
-
-.PHONY : lib/a.i
-
-# target to preprocess a source file
-lib/a.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/a.cpp.i
-.PHONY : lib/a.cpp.i
-
-lib/a.s: lib/a.cpp.s
-
-.PHONY : lib/a.s
-
-# target to generate assembly for a file
-lib/a.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/a.cpp.s
-.PHONY : lib/a.cpp.s
 
 lib/numword.o: lib/numword.cpp.o
 
@@ -1490,6 +1516,60 @@ src/chap07/utest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest.dir/build.make CMakeFiles/utest.dir/src/chap07/utest.cpp.s
 .PHONY : src/chap07/utest.cpp.s
 
+src/chap08/primes.o: src/chap08/primes.cpp.o
+
+.PHONY : src/chap08/primes.o
+
+# target to build an object file
+src/chap08/primes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/primes.dir/build.make CMakeFiles/primes.dir/src/chap08/primes.cpp.o
+.PHONY : src/chap08/primes.cpp.o
+
+src/chap08/primes.i: src/chap08/primes.cpp.i
+
+.PHONY : src/chap08/primes.i
+
+# target to preprocess a source file
+src/chap08/primes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/primes.dir/build.make CMakeFiles/primes.dir/src/chap08/primes.cpp.i
+.PHONY : src/chap08/primes.cpp.i
+
+src/chap08/primes.s: src/chap08/primes.cpp.s
+
+.PHONY : src/chap08/primes.s
+
+# target to generate assembly for a file
+src/chap08/primes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/primes.dir/build.make CMakeFiles/primes.dir/src/chap08/primes.cpp.s
+.PHONY : src/chap08/primes.cpp.s
+
+src/chap08/utest-2.o: src/chap08/utest-2.cpp.o
+
+.PHONY : src/chap08/utest-2.o
+
+# target to build an object file
+src/chap08/utest-2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest-2.dir/build.make CMakeFiles/utest-2.dir/src/chap08/utest-2.cpp.o
+.PHONY : src/chap08/utest-2.cpp.o
+
+src/chap08/utest-2.i: src/chap08/utest-2.cpp.i
+
+.PHONY : src/chap08/utest-2.i
+
+# target to preprocess a source file
+src/chap08/utest-2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest-2.dir/build.make CMakeFiles/utest-2.dir/src/chap08/utest-2.cpp.i
+.PHONY : src/chap08/utest-2.cpp.i
+
+src/chap08/utest-2.s: src/chap08/utest-2.cpp.s
+
+.PHONY : src/chap08/utest-2.s
+
+# target to generate assembly for a file
+src/chap08/utest-2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utest-2.dir/build.make CMakeFiles/utest-2.dir/src/chap08/utest-2.cpp.s
+.PHONY : src/chap08/utest-2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1516,6 +1596,7 @@ help:
 	@echo "... new-delete"
 	@echo "... numword-test"
 	@echo "... poly-lambda"
+	@echo "... primes"
 	@echo "... rational"
 	@echo "... rational-01"
 	@echo "... rational-02"
@@ -1527,15 +1608,16 @@ help:
 	@echo "... simple-inheritance"
 	@echo "... unique"
 	@echo "... utest"
+	@echo "... utest-2"
 	@echo "... vector-test"
 	@echo "... weak"
 	@echo "... working"
+	@echo "... lib/BWString.o"
+	@echo "... lib/BWString.i"
+	@echo "... lib/BWString.s"
 	@echo "... lib/BWUTest.o"
 	@echo "... lib/BWUTest.i"
 	@echo "... lib/BWUTest.s"
-	@echo "... lib/a.o"
-	@echo "... lib/a.i"
-	@echo "... lib/a.s"
 	@echo "... lib/numword.o"
 	@echo "... lib/numword.i"
 	@echo "... lib/numword.s"
@@ -1635,6 +1717,12 @@ help:
 	@echo "... src/chap07/utest.o"
 	@echo "... src/chap07/utest.i"
 	@echo "... src/chap07/utest.s"
+	@echo "... src/chap08/primes.o"
+	@echo "... src/chap08/primes.i"
+	@echo "... src/chap08/primes.s"
+	@echo "... src/chap08/utest-2.o"
+	@echo "... src/chap08/utest-2.i"
+	@echo "... src/chap08/utest-2.s"
 .PHONY : help
 
 

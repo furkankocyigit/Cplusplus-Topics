@@ -3,8 +3,8 @@
 //  (c) 1995-2018 Bill Weinman <http://bw.org/>
 //  version as of 2018-10-12
 
-#ifndef __BWLIB__BWString__
-#define __BWLIB__BWString__
+#ifndef __BWLIB__BWString2__
+#define __BWLIB__BWString2__
 
 #ifdef _MSC_VER
 // disable MSVC _s warnings

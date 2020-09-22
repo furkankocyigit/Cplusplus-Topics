@@ -3,8 +3,8 @@
 // by Bill Weinman <http://bw.org/>
 // as of 2018-10-12
 
-#ifndef __BWLib__BWUTest__
-#define __BWLib__BWUTest__
+#ifndef __BWLib__BWUTest2__
+#define __BWLib__BWUTest2__
 
 #include <cstdio>
 

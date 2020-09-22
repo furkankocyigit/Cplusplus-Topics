@@ -1,4 +1,5 @@
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/utest-2.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/utest.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/working.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/side-effects.dir
@@ -12,6 +13,7 @@
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/member-function.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/deneme.dir
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/primes.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/lambda.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/data.dir
 /home/ubuntu/Cplusplus-Topics/Advanced_Topics/build/CMakeFiles/MyLib.dir

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyLib.dir/lib/BWString.cpp.o"
   "CMakeFiles/MyLib.dir/lib/BWUTest.cpp.o"
-  "CMakeFiles/MyLib.dir/lib/a.cpp.o"
   "CMakeFiles/MyLib.dir/lib/numword.cpp.o"
   "CMakeFiles/MyLib.dir/lib/strc.cpp.o"
   "libMyLib.a"

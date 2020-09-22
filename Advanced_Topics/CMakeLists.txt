@@ -134,3 +134,12 @@ foreach(sourceFile ${sources})
     target_link_libraries(${name} MyLib)
     
 endforeach(sourceFile ${sources})
+
+file(GLOB sources /home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap08/*.cpp)
+foreach(sourceFile ${sources})
+    get_filename_component(name ${sourceFile} NAME_WLE)
+    MESSAGE(STATUS "New executable ==> " ${name})
+    add_executable(${name} ${sourceFile} )
+    target_link_libraries(${name} MyLib)
+    
+endforeach(sourceFile ${sources})

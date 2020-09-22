@@ -1,31 +1,25 @@
-//  BWString.cpp
-//  A simple smart string class
-//  (c) 1995-2018 Bill Weinman <http://bw.org/>
-//  version as of 2018-10-12
-
 #include "BWString.h"
 
-// MARK: - constructors/destructors
+// MARK: -constructor/destructor
 
-BWString::BWString( ) {
+BWString::BWString(){
     reset();
 }
 
-BWString::BWString( const char * s ) {
+BWString::BWString(const char *s ){
     copy_str(s);
 }
 
-BWString::BWString( const BWString & old ) {
+BWString::BWString( const BWString & old ){
     copy_str(old);
 }
 
-
-BWString::~BWString() {
+BWString::~BWString(){
     reset();
 }
 
 // move constructor
-BWString::BWString( BWString && other ) noexcept {
+BWString::BWString( BWString && other) noexcept{
     reset();
     _str = other._str;
     _str_len = other._str_len;
@@ -37,9 +31,9 @@ BWString::BWString( BWString && other ) noexcept {
 // MARK: - private methods
 
 void BWString::_reset_split_array() const {
-    if (_split_count) {
-        // dtor the elements in the array
-        while(_split_count) {
+    if(_split_count){
+        //dtor the elements in the array
+        while(_split_count){
             _split_array[--_split_count].reset();
         }
         _split_array.reset();
@@ -47,13 +41,13 @@ void BWString::_reset_split_array() const {
     }
 }
 
-void BWString::_append_split_array(const BWString & s) const {
-    if (_split_count >= _bwstring_max_split) return;
-    if (!_split_count) {
+void BWString::_append_split_array( const BWString & s) const {
+    if(_split_count >= _bwstring_max_split) return;
+    if(!_split_count){
         _split_array.reset(new _bwsp[_bwstring_max_split + 1]);
     }
-    _split_array[_split_count] = std::make_shared<BWString>(s);
-    ++ _split_count;
+    _split_array[_split_count] = std::make_shared<BWString> ( s );
+    ++_split_count;
 }
 
 // MARK: - public methods
@@ -65,27 +59,27 @@ const char * BWString::alloc_str( size_t sz ) {
     return _str;
 }
 
-void BWString::reset() {
+void BWString::reset(){
     _reset_split_array();
-    if(_str) {
+    if(_str){
         delete [] _str;
         _str = nullptr;
         _str_len = 0;
     }
 }
 
-void BWString::swap(BWString & other) {
+void BWString::swap(BWString & other){
     std::swap(_str, other._str);
     std::swap(_str_len, other._str_len);
 }
 
-const char * BWString::c_str() const {
+const char * BWString::c_str() const { 
     return _str;
 }
 
 const char * BWString::copy_str( const char * s) {
     if(s) {
-        size_t len = strnlen(s, _bwstring_max_len);
+        size_t len = (size_t)strnlen(s, _bwstring_max_len);
         alloc_str(len);
         strncpy((char *)_str, s, len);
         _str_len = len;
@@ -101,7 +95,7 @@ BWString & BWString::operator = ( BWString other ) {
     return *this;
 }
 
-BWString & BWString::operator += ( const char * rhs ) {
+BWString & BWString::operator += (const char * rhs){
     if(rhs) {
         size_t newlen = _str_len + strnlen(rhs, _bwstring_max_len);
         if (newlen > _bwstring_max_len) newlen = _bwstring_max_len;
@@ -118,8 +112,8 @@ BWString & BWString::operator += ( const char * rhs ) {
     return *this;
 }
 
-BWString & BWString::operator += ( const BWString & rhs ) {
-    operator+=(rhs.c_str());
+BWString & BWString::operator += ( const BWString & rhs){
+    operator += (rhs.c_str());
     return *this;
 }
 
@@ -163,27 +157,27 @@ bool BWString::operator <= ( const BWString & rhs ) const {
 
 // MARK: - conversion operators
 
-BWString::operator const char * () const {
+BWString::operator const char * () const{
     return c_str();
 }
 
-// MARK: - Utility methods
+// MARK: - utility methods
 
 bool BWString::have_value() const {
     if(_str) return true;
     else return false;
 }
 
-// string format
-BWString & BWString::format( const char * format , ... ) {
+BWString & BWString::format( const char * format, ...){
+
     char * buffer;
-    
+
     va_list args;
-    va_start(args, format);
-    
+    va_start(args,format);
+
     vasprintf(&buffer, format, args);
     copy_str(buffer);
-    free(buffer);   // vasprintf uses malloc
+    free(buffer);       // vasprintf uses malloc
     return *this;
 }
 
@@ -222,7 +216,7 @@ BWString & BWString::trim() {
 
 BWString BWString::lower() const {
     BWString rs = *this;
-    for (size_t i = 0; rs._str[i]; ++i) {
+    for(size_t i = 0; rs._str[i]; ++i){
         rs._str[i] = tolower(rs._str[i]);
     }
     return rs;
@@ -246,8 +240,8 @@ const char & BWString::front() const {
 
 // MARK: - find and replace methods
 
-long int BWString::char_find( const char & match ) const {
-    for (size_t i = 0; _str[i]; ++i) {
+long int BWString::char_find( const char & match) const { 
+    for (size_t i = 0; _str[i]; ++i){
         if(_str[i] == match) return i;
     }
     return -1;
@@ -260,35 +254,35 @@ const BWString & BWString::char_repl( const char & match, const char & repl ) {
     return *this;
 }
 
-BWString BWString::substr( size_t start, size_t length ) {
+BWString BWString::substr(size_t start,size_t length){
     BWString rs;
     char * buf;
-    if ((length + 1) > _bwstring_max_len || (start + length) > _bwstring_max_len) return rs;
-    if (length > _str_len - start) return rs;
-    if (!_str) return rs;
-    
+    if((length + 1) > _bwstring_max_len || (start + length )> _bwstring_max_len) return rs;
+    if(length > _str_len - start) return rs;
+    if(!_str) return rs;
+
     buf = new char[length + 1]();
-    memcpy(buf, _str + start, length);
+    memcpy(buf,_str + start, length);
     rs = buf;
-    delete [] buf;
-    
+    delete [] buf ;
+
     return rs;
 }
 
 long BWString::find( const BWString & match ) const {
     char * pos = strstr(_str, match.c_str());
-    if(pos) return (long) ( pos - _str );
+    if (pos) return (long) (pos - _str);
     else return -1;
 }
 
-const BWString BWString::replace( const BWString & match, const BWString & repl ) {
+const BWString BWString::replace(const BWString & match, const BWString & repl){
     BWString rs;
     long f1 = find(match);
-    if (f1 >= 0) {
+    if(f1 >= 0){
         size_t pos1 = (size_t) f1;
         size_t pos2 = pos1 + match.length();
-        BWString s1 = pos1 > 0 ? substr(0, pos1) : "";
-        BWString s2 = substr(pos2, length() - pos2);
+        BWString s1 = pos1 > 0 ? substr(0,pos1) : "";
+        BWString s2 = substr(pos2, length()- pos2);
         rs = s1 + repl + s2;
     }
     return rs;
@@ -297,8 +291,9 @@ const BWString BWString::replace( const BWString & match, const BWString & repl 
 // MARK: - split methods
 
 // non-destructive split
-const BWString::split_ptr & BWString::split( const char match ) const {
-    const char match_s[2] = { match, 0 };
+
+const BWString::split_ptr & BWString::split(const char match) const{
+    const char match_s[2] = { match, 0};
     return split(match_s, -1);
 }
 
@@ -308,30 +303,31 @@ const BWString::split_ptr & BWString::split( const char * match ) const {
 
 const BWString::split_ptr & BWString::split( const char * match, int max_split ) const {
     _reset_split_array();
-    if (length() < 1) return _split_array;
-    if (max_split < 0) max_split = _bwstring_max_split;
-    
+    if(length() < 1) return _split_array;
+    if(max_split < 0) max_split = _bwstring_max_split;
+
     size_t match_len = strnlen(match, _bwstring_max_len);
     if(match_len >= _bwstring_max_len) return _split_array;
-    
-    char * mi;              // match index
-    char * pstr = _str;     // string pointer
-    while (( mi = strstr(pstr, match)) && --max_split ) {
-        if(mi != pstr) {
+
+    char * mi;              //match index
+    char * pstr = _str;     //string pointer
+
+    while((mi = strstr(pstr,match)) && --max_split){
+        if( mi !=pstr){
             size_t lhsz = mi - pstr;
             char * cslhs = new char[lhsz + 1]();
-            memcpy(cslhs, pstr, lhsz);
+            memcpy(cslhs,pstr,lhsz);
             _append_split_array(cslhs);
             delete [] cslhs;
             pstr += lhsz;
         }
         pstr += match_len;
     }
-    
-    if (*pstr != '\0') {
+
+    if(*pstr != '\0'){
         _append_split_array(pstr);
     }
-    
+
     return _split_array;
 }
 
@@ -353,17 +349,16 @@ BWString operator + ( const BWString & lhs, const BWString & rhs ) {
 
 // MARK: - MS missing standard-ish functions
 
-int vasprintf(char ** ret, const char * format, va_list ap)
-{
+int vasprintf(char ** ret, const char * format, va_list ap){
     int len;
-    char *buffer;
+    char * buffer;
     
     len = _vscprintf(format, ap) + 1;
     buffer = (char *) malloc(len * sizeof(char));
-    if (!buffer) return 0;
-    vsprintf_s(buffer, len, format, ap);
+    if(!buffer) return 0;
+    vsprintf_s(buffer,len,format,ap);
     *ret = buffer;
-    return len -1;
+    return len - 1;
 }
 
 #endif // _MSC_VER

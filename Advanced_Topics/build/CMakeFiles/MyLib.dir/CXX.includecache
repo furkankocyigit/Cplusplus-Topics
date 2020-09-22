@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.cpp
-BWUTest.h
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.h
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWString.cpp
+BWString.h
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWString.h
 
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWUTest.h
-cstdio
+/home/ubuntu/Cplusplus-Topics/Advanced_Topics/lib/BWString.h
+cstdarg
+-
+cstdlib
+-
+cstring
+-
+cstdarg
+-
+cctype
+-
+memory
 -
 
