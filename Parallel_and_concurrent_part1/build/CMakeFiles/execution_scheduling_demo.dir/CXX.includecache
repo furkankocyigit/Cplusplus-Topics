@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/deneme.cpp
-iostream
+/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/execution_scheduling_demo.cpp
+thread
 -
-stdio.h
+chrono
 -
-array
--
-vector
--
-iterator
--
-random
--
-map
+pthread.h
 -
 
