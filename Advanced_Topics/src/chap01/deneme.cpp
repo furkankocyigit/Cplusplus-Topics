@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 #include <array>
 #include <vector>
 #include <iterator>
@@ -34,7 +35,56 @@ int& getElement(std::array<int, 25> & array, int index)
     return array[index];
 }
 
+int fn (int *x){
+    if(*x % 3 == 0) return ++*x;
+    else if(*x % 3 ==1) return --*x;
+    else return *x;
+}
+void fun1(int i){int *p; p= &i; *p -= 10;}
+void fun2 (int *p){ *p -= 20;};
+void fun3 ( int*p){int i; i= *p ; i-=30;}
+
+
+
 int main(){
+
+    bool flag = false;
+    for(int i = 2; i<100; ++i){
+        flag = false;
+
+        for(int j = 2; j < i; j++){
+            if(i % j == 0){
+                flag = true;
+                break;
+            }
+        }
+        if(!flag)
+        cout<<"prime number: "<<i<<endl;
+    }
+
+    /*
+    int aa;
+    for(aa = 240; aa>0;aa--){
+        printf("*");
+        fun1(aa);
+        fun2(&aa);
+        fun3(&aa);
+        cout<<"aa: "<<aa<<endl;
+    }
+    
+    int i , x1 = 5;
+    for(i = 0; i < 3; i++, x1++){
+      
+        printf("\n%d",x1);
+        printf(" %d ", fn(&x1));
+        
+      
+
+    }
+
+
+
+
     cout<<"----------------------Most Repetad Element-----------------\n";
     std::vector<int> my_vector = { 1,2,2,3,3,3,4,5 };
     std::map<int, int> counter;
@@ -92,7 +142,7 @@ int main(){
 
     // Output the result, for demonstration purposes
     std::copy(begin(data), end(data), std::ostream_iterator<double>(std::cout, " "));
-    std::cout << "\n";
+    std::cout << "\n";*/
 
 
 

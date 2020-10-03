@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -o CMakeFiles/execution_scheduling_demo.dir/src/execution_scheduling_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/execution_scheduling_demo.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/execution_scheduling_demo.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -o CMakeFiles/MyLib.dir/lib/a.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib/a.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib/a.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -o CMakeFiles/thread_process_demo.dir/src/thread_process_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/thread_process_demo.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/thread_process_demo.cpp"
+}
+]

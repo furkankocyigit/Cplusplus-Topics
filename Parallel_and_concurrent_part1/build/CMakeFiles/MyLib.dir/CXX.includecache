@@ -6,19 +6,5 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/Cplusplus-Topics/Advanced_Topics/src/chap01/deneme.cpp
-iostream
--
-stdio.h
--
-array
--
-vector
--
-iterator
--
-random
--
-map
--
+/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib/a.cpp
 
