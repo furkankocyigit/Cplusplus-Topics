@@ -130,6 +130,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named thread_process_demo
+
+# Build rule for target.
+thread_process_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_process_demo
+.PHONY : thread_process_demo
+
+# fast build rule for target.
+thread_process_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/build
+.PHONY : thread_process_demo/fast
+
+#=============================================================================
+# Target rules for targets named thread_lifecycle_demo
+
+# Build rule for target.
+thread_lifecycle_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_lifecycle_demo
+.PHONY : thread_lifecycle_demo
+
+# fast build rule for target.
+thread_lifecycle_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_lifecycle_demo.dir/build.make CMakeFiles/thread_lifecycle_demo.dir/build
+.PHONY : thread_lifecycle_demo/fast
+
+#=============================================================================
 # Target rules for targets named execution_scheduling_demo
 
 # Build rule for target.
@@ -156,17 +182,43 @@ MyLib/fast:
 .PHONY : MyLib/fast
 
 #=============================================================================
-# Target rules for targets named thread_process_demo
+# Target rules for targets named atomic_object_demo
 
 # Build rule for target.
-thread_process_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_process_demo
-.PHONY : thread_process_demo
+atomic_object_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 atomic_object_demo
+.PHONY : atomic_object_demo
 
 # fast build rule for target.
-thread_process_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/build
-.PHONY : thread_process_demo/fast
+atomic_object_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atomic_object_demo.dir/build.make CMakeFiles/atomic_object_demo.dir/build
+.PHONY : atomic_object_demo/fast
+
+#=============================================================================
+# Target rules for targets named data_race_demo
+
+# Build rule for target.
+data_race_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_race_demo
+.PHONY : data_race_demo
+
+# fast build rule for target.
+data_race_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_race_demo.dir/build.make CMakeFiles/data_race_demo.dir/build
+.PHONY : data_race_demo/fast
+
+#=============================================================================
+# Target rules for targets named detached_thread_demo
+
+# Build rule for target.
+detached_thread_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detached_thread_demo
+.PHONY : detached_thread_demo
+
+# fast build rule for target.
+detached_thread_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/build
+.PHONY : detached_thread_demo/fast
 
 lib/a.o: lib/a.cpp.o
 
@@ -195,6 +247,87 @@ lib/a.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/a.cpp.s
 .PHONY : lib/a.cpp.s
 
+src/atomic_object_demo.o: src/atomic_object_demo.cpp.o
+
+.PHONY : src/atomic_object_demo.o
+
+# target to build an object file
+src/atomic_object_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atomic_object_demo.dir/build.make CMakeFiles/atomic_object_demo.dir/src/atomic_object_demo.cpp.o
+.PHONY : src/atomic_object_demo.cpp.o
+
+src/atomic_object_demo.i: src/atomic_object_demo.cpp.i
+
+.PHONY : src/atomic_object_demo.i
+
+# target to preprocess a source file
+src/atomic_object_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atomic_object_demo.dir/build.make CMakeFiles/atomic_object_demo.dir/src/atomic_object_demo.cpp.i
+.PHONY : src/atomic_object_demo.cpp.i
+
+src/atomic_object_demo.s: src/atomic_object_demo.cpp.s
+
+.PHONY : src/atomic_object_demo.s
+
+# target to generate assembly for a file
+src/atomic_object_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atomic_object_demo.dir/build.make CMakeFiles/atomic_object_demo.dir/src/atomic_object_demo.cpp.s
+.PHONY : src/atomic_object_demo.cpp.s
+
+src/data_race_demo.o: src/data_race_demo.cpp.o
+
+.PHONY : src/data_race_demo.o
+
+# target to build an object file
+src/data_race_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_race_demo.dir/build.make CMakeFiles/data_race_demo.dir/src/data_race_demo.cpp.o
+.PHONY : src/data_race_demo.cpp.o
+
+src/data_race_demo.i: src/data_race_demo.cpp.i
+
+.PHONY : src/data_race_demo.i
+
+# target to preprocess a source file
+src/data_race_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_race_demo.dir/build.make CMakeFiles/data_race_demo.dir/src/data_race_demo.cpp.i
+.PHONY : src/data_race_demo.cpp.i
+
+src/data_race_demo.s: src/data_race_demo.cpp.s
+
+.PHONY : src/data_race_demo.s
+
+# target to generate assembly for a file
+src/data_race_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_race_demo.dir/build.make CMakeFiles/data_race_demo.dir/src/data_race_demo.cpp.s
+.PHONY : src/data_race_demo.cpp.s
+
+src/detached_thread_demo.o: src/detached_thread_demo.cpp.o
+
+.PHONY : src/detached_thread_demo.o
+
+# target to build an object file
+src/detached_thread_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/src/detached_thread_demo.cpp.o
+.PHONY : src/detached_thread_demo.cpp.o
+
+src/detached_thread_demo.i: src/detached_thread_demo.cpp.i
+
+.PHONY : src/detached_thread_demo.i
+
+# target to preprocess a source file
+src/detached_thread_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/src/detached_thread_demo.cpp.i
+.PHONY : src/detached_thread_demo.cpp.i
+
+src/detached_thread_demo.s: src/detached_thread_demo.cpp.s
+
+.PHONY : src/detached_thread_demo.s
+
+# target to generate assembly for a file
+src/detached_thread_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/src/detached_thread_demo.cpp.s
+.PHONY : src/detached_thread_demo.cpp.s
+
 src/execution_scheduling_demo.o: src/execution_scheduling_demo.cpp.o
 
 .PHONY : src/execution_scheduling_demo.o
@@ -221,6 +354,33 @@ src/execution_scheduling_demo.s: src/execution_scheduling_demo.cpp.s
 src/execution_scheduling_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execution_scheduling_demo.dir/build.make CMakeFiles/execution_scheduling_demo.dir/src/execution_scheduling_demo.cpp.s
 .PHONY : src/execution_scheduling_demo.cpp.s
+
+src/thread_lifecycle_demo.o: src/thread_lifecycle_demo.cpp.o
+
+.PHONY : src/thread_lifecycle_demo.o
+
+# target to build an object file
+src/thread_lifecycle_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_lifecycle_demo.dir/build.make CMakeFiles/thread_lifecycle_demo.dir/src/thread_lifecycle_demo.cpp.o
+.PHONY : src/thread_lifecycle_demo.cpp.o
+
+src/thread_lifecycle_demo.i: src/thread_lifecycle_demo.cpp.i
+
+.PHONY : src/thread_lifecycle_demo.i
+
+# target to preprocess a source file
+src/thread_lifecycle_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_lifecycle_demo.dir/build.make CMakeFiles/thread_lifecycle_demo.dir/src/thread_lifecycle_demo.cpp.i
+.PHONY : src/thread_lifecycle_demo.cpp.i
+
+src/thread_lifecycle_demo.s: src/thread_lifecycle_demo.cpp.s
+
+.PHONY : src/thread_lifecycle_demo.s
+
+# target to generate assembly for a file
+src/thread_lifecycle_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_lifecycle_demo.dir/build.make CMakeFiles/thread_lifecycle_demo.dir/src/thread_lifecycle_demo.cpp.s
+.PHONY : src/thread_lifecycle_demo.cpp.s
 
 src/thread_process_demo.o: src/thread_process_demo.cpp.o
 
@@ -258,14 +418,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyLib"
+	@echo "... atomic_object_demo"
+	@echo "... data_race_demo"
+	@echo "... detached_thread_demo"
 	@echo "... execution_scheduling_demo"
+	@echo "... thread_lifecycle_demo"
 	@echo "... thread_process_demo"
 	@echo "... lib/a.o"
 	@echo "... lib/a.i"
 	@echo "... lib/a.s"
+	@echo "... src/atomic_object_demo.o"
+	@echo "... src/atomic_object_demo.i"
+	@echo "... src/atomic_object_demo.s"
+	@echo "... src/data_race_demo.o"
+	@echo "... src/data_race_demo.i"
+	@echo "... src/data_race_demo.s"
+	@echo "... src/detached_thread_demo.o"
+	@echo "... src/detached_thread_demo.i"
+	@echo "... src/detached_thread_demo.s"
 	@echo "... src/execution_scheduling_demo.o"
 	@echo "... src/execution_scheduling_demo.i"
 	@echo "... src/execution_scheduling_demo.s"
+	@echo "... src/thread_lifecycle_demo.o"
+	@echo "... src/thread_lifecycle_demo.i"
+	@echo "... src/thread_lifecycle_demo.s"
 	@echo "... src/thread_process_demo.o"
 	@echo "... src/thread_process_demo.i"
 	@echo "... src/thread_process_demo.s"

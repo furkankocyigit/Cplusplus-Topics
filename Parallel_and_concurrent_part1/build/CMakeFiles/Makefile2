@@ -72,9 +72,13 @@ CMAKE_BINARY_DIR = /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/b
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/thread_process_demo.dir/all
+all: CMakeFiles/thread_lifecycle_demo.dir/all
 all: CMakeFiles/execution_scheduling_demo.dir/all
 all: CMakeFiles/MyLib.dir/all
-all: CMakeFiles/thread_process_demo.dir/all
+all: CMakeFiles/atomic_object_demo.dir/all
+all: CMakeFiles/data_race_demo.dir/all
+all: CMakeFiles/detached_thread_demo.dir/all
 
 .PHONY : all
 
@@ -84,11 +88,69 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/thread_process_demo.dir/clean
+clean: CMakeFiles/thread_lifecycle_demo.dir/clean
 clean: CMakeFiles/execution_scheduling_demo.dir/clean
 clean: CMakeFiles/MyLib.dir/clean
-clean: CMakeFiles/thread_process_demo.dir/clean
+clean: CMakeFiles/atomic_object_demo.dir/clean
+clean: CMakeFiles/data_race_demo.dir/clean
+clean: CMakeFiles/detached_thread_demo.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/thread_process_demo.dir
+
+# All Build rule for target.
+CMakeFiles/thread_process_demo.dir/all: CMakeFiles/MyLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles --progress-num=13,14 "Built target thread_process_demo"
+.PHONY : CMakeFiles/thread_process_demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/thread_process_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/thread_process_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles 0
+.PHONY : CMakeFiles/thread_process_demo.dir/rule
+
+# Convenience name for target.
+thread_process_demo: CMakeFiles/thread_process_demo.dir/rule
+
+.PHONY : thread_process_demo
+
+# clean rule for target.
+CMakeFiles/thread_process_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/clean
+.PHONY : CMakeFiles/thread_process_demo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/thread_lifecycle_demo.dir
+
+# All Build rule for target.
+CMakeFiles/thread_lifecycle_demo.dir/all: CMakeFiles/MyLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_lifecycle_demo.dir/build.make CMakeFiles/thread_lifecycle_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_lifecycle_demo.dir/build.make CMakeFiles/thread_lifecycle_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles --progress-num=11,12 "Built target thread_lifecycle_demo"
+.PHONY : CMakeFiles/thread_lifecycle_demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/thread_lifecycle_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/thread_lifecycle_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles 0
+.PHONY : CMakeFiles/thread_lifecycle_demo.dir/rule
+
+# Convenience name for target.
+thread_lifecycle_demo: CMakeFiles/thread_lifecycle_demo.dir/rule
+
+.PHONY : thread_lifecycle_demo
+
+# clean rule for target.
+CMakeFiles/thread_lifecycle_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_lifecycle_demo.dir/build.make CMakeFiles/thread_lifecycle_demo.dir/clean
+.PHONY : CMakeFiles/thread_lifecycle_demo.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/execution_scheduling_demo.dir
@@ -97,7 +159,7 @@ clean: CMakeFiles/thread_process_demo.dir/clean
 CMakeFiles/execution_scheduling_demo.dir/all: CMakeFiles/MyLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execution_scheduling_demo.dir/build.make CMakeFiles/execution_scheduling_demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execution_scheduling_demo.dir/build.make CMakeFiles/execution_scheduling_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles --progress-num=3,4 "Built target execution_scheduling_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles --progress-num=9,10 "Built target execution_scheduling_demo"
 .PHONY : CMakeFiles/execution_scheduling_demo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -145,31 +207,85 @@ CMakeFiles/MyLib.dir/clean:
 .PHONY : CMakeFiles/MyLib.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/thread_process_demo.dir
+# Target rules for target CMakeFiles/atomic_object_demo.dir
 
 # All Build rule for target.
-CMakeFiles/thread_process_demo.dir/all: CMakeFiles/MyLib.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles --progress-num=5,6 "Built target thread_process_demo"
-.PHONY : CMakeFiles/thread_process_demo.dir/all
+CMakeFiles/atomic_object_demo.dir/all: CMakeFiles/MyLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atomic_object_demo.dir/build.make CMakeFiles/atomic_object_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atomic_object_demo.dir/build.make CMakeFiles/atomic_object_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles --progress-num=3,4 "Built target atomic_object_demo"
+.PHONY : CMakeFiles/atomic_object_demo.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/thread_process_demo.dir/rule: cmake_check_build_system
+CMakeFiles/atomic_object_demo.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/thread_process_demo.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/atomic_object_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles 0
-.PHONY : CMakeFiles/thread_process_demo.dir/rule
+.PHONY : CMakeFiles/atomic_object_demo.dir/rule
 
 # Convenience name for target.
-thread_process_demo: CMakeFiles/thread_process_demo.dir/rule
+atomic_object_demo: CMakeFiles/atomic_object_demo.dir/rule
 
-.PHONY : thread_process_demo
+.PHONY : atomic_object_demo
 
 # clean rule for target.
-CMakeFiles/thread_process_demo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/clean
-.PHONY : CMakeFiles/thread_process_demo.dir/clean
+CMakeFiles/atomic_object_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atomic_object_demo.dir/build.make CMakeFiles/atomic_object_demo.dir/clean
+.PHONY : CMakeFiles/atomic_object_demo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/data_race_demo.dir
+
+# All Build rule for target.
+CMakeFiles/data_race_demo.dir/all: CMakeFiles/MyLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_race_demo.dir/build.make CMakeFiles/data_race_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_race_demo.dir/build.make CMakeFiles/data_race_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles --progress-num=5,6 "Built target data_race_demo"
+.PHONY : CMakeFiles/data_race_demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/data_race_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/data_race_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles 0
+.PHONY : CMakeFiles/data_race_demo.dir/rule
+
+# Convenience name for target.
+data_race_demo: CMakeFiles/data_race_demo.dir/rule
+
+.PHONY : data_race_demo
+
+# clean rule for target.
+CMakeFiles/data_race_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_race_demo.dir/build.make CMakeFiles/data_race_demo.dir/clean
+.PHONY : CMakeFiles/data_race_demo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/detached_thread_demo.dir
+
+# All Build rule for target.
+CMakeFiles/detached_thread_demo.dir/all: CMakeFiles/MyLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles --progress-num=7,8 "Built target detached_thread_demo"
+.PHONY : CMakeFiles/detached_thread_demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/detached_thread_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/detached_thread_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build/CMakeFiles 0
+.PHONY : CMakeFiles/detached_thread_demo.dir/rule
+
+# Convenience name for target.
+detached_thread_demo: CMakeFiles/detached_thread_demo.dir/rule
+
+.PHONY : detached_thread_demo
+
+# clean rule for target.
+CMakeFiles/detached_thread_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/clean
+.PHONY : CMakeFiles/detached_thread_demo.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
