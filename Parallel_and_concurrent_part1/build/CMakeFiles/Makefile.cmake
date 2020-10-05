@@ -45,7 +45,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/thread_process_demo.dir/DependInfo.cmake"
+  "CMakeFiles/thread_lifecycle_demo.dir/DependInfo.cmake"
   "CMakeFiles/execution_scheduling_demo.dir/DependInfo.cmake"
   "CMakeFiles/MyLib.dir/DependInfo.cmake"
-  "CMakeFiles/thread_process_demo.dir/DependInfo.cmake"
+  "CMakeFiles/atomic_object_demo.dir/DependInfo.cmake"
+  "CMakeFiles/data_race_demo.dir/DependInfo.cmake"
+  "CMakeFiles/detached_thread_demo.dir/DependInfo.cmake"
   )

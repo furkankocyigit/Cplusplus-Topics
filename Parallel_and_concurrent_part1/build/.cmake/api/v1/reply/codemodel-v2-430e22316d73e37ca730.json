@@ -16,7 +16,11 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4,
+						5,
+						6
 					]
 				}
 			],
@@ -33,7 +37,11 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4,
+						5,
+						6
 					]
 				}
 			],
@@ -48,9 +56,37 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "atomic_object_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-atomic_object_demo-Debug-2d5293025fecdd5d6531.json",
+					"name" : "atomic_object_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "data_race_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-data_race_demo-Debug-0d7fb357e516f03583a1.json",
+					"name" : "data_race_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detached_thread_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detached_thread_demo-Debug-9408aeec412d6ee9b040.json",
+					"name" : "detached_thread_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "execution_scheduling_demo::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-execution_scheduling_demo-Debug-4d333b8322878598bec1.json",
 					"name" : "execution_scheduling_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "thread_lifecycle_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-thread_lifecycle_demo-Debug-5b93a9e0d018fa9d10b0.json",
+					"name" : "thread_lifecycle_demo",
 					"projectIndex" : 0
 				},
 				{
