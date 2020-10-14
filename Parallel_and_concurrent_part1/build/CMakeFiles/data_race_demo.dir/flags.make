@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include
 
-CXX_FLAGS = -pthread -g
+CXX_FLAGS = -pthread -g -std=gnu++1z
 

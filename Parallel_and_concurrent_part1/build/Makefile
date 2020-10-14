@@ -130,69 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named thread_process_demo
+# Target rules for targets named detached_thread_demo
 
 # Build rule for target.
-thread_process_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_process_demo
-.PHONY : thread_process_demo
+detached_thread_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detached_thread_demo
+.PHONY : detached_thread_demo
 
 # fast build rule for target.
-thread_process_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/build
-.PHONY : thread_process_demo/fast
-
-#=============================================================================
-# Target rules for targets named thread_lifecycle_demo
-
-# Build rule for target.
-thread_lifecycle_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_lifecycle_demo
-.PHONY : thread_lifecycle_demo
-
-# fast build rule for target.
-thread_lifecycle_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_lifecycle_demo.dir/build.make CMakeFiles/thread_lifecycle_demo.dir/build
-.PHONY : thread_lifecycle_demo/fast
-
-#=============================================================================
-# Target rules for targets named execution_scheduling_demo
-
-# Build rule for target.
-execution_scheduling_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 execution_scheduling_demo
-.PHONY : execution_scheduling_demo
-
-# fast build rule for target.
-execution_scheduling_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/execution_scheduling_demo.dir/build.make CMakeFiles/execution_scheduling_demo.dir/build
-.PHONY : execution_scheduling_demo/fast
-
-#=============================================================================
-# Target rules for targets named MyLib
-
-# Build rule for target.
-MyLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyLib
-.PHONY : MyLib
-
-# fast build rule for target.
-MyLib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/build
-.PHONY : MyLib/fast
-
-#=============================================================================
-# Target rules for targets named atomic_object_demo
-
-# Build rule for target.
-atomic_object_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 atomic_object_demo
-.PHONY : atomic_object_demo
-
-# fast build rule for target.
-atomic_object_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atomic_object_demo.dir/build.make CMakeFiles/atomic_object_demo.dir/build
-.PHONY : atomic_object_demo/fast
+detached_thread_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/build
+.PHONY : detached_thread_demo/fast
 
 #=============================================================================
 # Target rules for targets named data_race_demo
@@ -208,17 +156,108 @@ data_race_demo/fast:
 .PHONY : data_race_demo/fast
 
 #=============================================================================
-# Target rules for targets named detached_thread_demo
+# Target rules for targets named try_lock_demo
 
 # Build rule for target.
-detached_thread_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detached_thread_demo
-.PHONY : detached_thread_demo
+try_lock_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 try_lock_demo
+.PHONY : try_lock_demo
 
 # fast build rule for target.
-detached_thread_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/build
-.PHONY : detached_thread_demo/fast
+try_lock_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/try_lock_demo.dir/build.make CMakeFiles/try_lock_demo.dir/build
+.PHONY : try_lock_demo/fast
+
+#=============================================================================
+# Target rules for targets named atomic_object_demo
+
+# Build rule for target.
+atomic_object_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 atomic_object_demo
+.PHONY : atomic_object_demo
+
+# fast build rule for target.
+atomic_object_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atomic_object_demo.dir/build.make CMakeFiles/atomic_object_demo.dir/build
+.PHONY : atomic_object_demo/fast
+
+#=============================================================================
+# Target rules for targets named MyLib
+
+# Build rule for target.
+MyLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyLib
+.PHONY : MyLib
+
+# fast build rule for target.
+MyLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/build
+.PHONY : MyLib/fast
+
+#=============================================================================
+# Target rules for targets named execution_scheduling_demo
+
+# Build rule for target.
+execution_scheduling_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 execution_scheduling_demo
+.PHONY : execution_scheduling_demo
+
+# fast build rule for target.
+execution_scheduling_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/execution_scheduling_demo.dir/build.make CMakeFiles/execution_scheduling_demo.dir/build
+.PHONY : execution_scheduling_demo/fast
+
+#=============================================================================
+# Target rules for targets named recursive_mutex_demo
+
+# Build rule for target.
+recursive_mutex_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recursive_mutex_demo
+.PHONY : recursive_mutex_demo
+
+# fast build rule for target.
+recursive_mutex_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex_demo.dir/build.make CMakeFiles/recursive_mutex_demo.dir/build
+.PHONY : recursive_mutex_demo/fast
+
+#=============================================================================
+# Target rules for targets named shared_mutex_demo
+
+# Build rule for target.
+shared_mutex_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shared_mutex_demo
+.PHONY : shared_mutex_demo
+
+# fast build rule for target.
+shared_mutex_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mutex_demo.dir/build.make CMakeFiles/shared_mutex_demo.dir/build
+.PHONY : shared_mutex_demo/fast
+
+#=============================================================================
+# Target rules for targets named thread_lifecycle_demo
+
+# Build rule for target.
+thread_lifecycle_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_lifecycle_demo
+.PHONY : thread_lifecycle_demo
+
+# fast build rule for target.
+thread_lifecycle_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_lifecycle_demo.dir/build.make CMakeFiles/thread_lifecycle_demo.dir/build
+.PHONY : thread_lifecycle_demo/fast
+
+#=============================================================================
+# Target rules for targets named thread_process_demo
+
+# Build rule for target.
+thread_process_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_process_demo
+.PHONY : thread_process_demo
+
+# fast build rule for target.
+thread_process_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/build
+.PHONY : thread_process_demo/fast
 
 lib/a.o: lib/a.cpp.o
 
@@ -355,6 +394,60 @@ src/execution_scheduling_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execution_scheduling_demo.dir/build.make CMakeFiles/execution_scheduling_demo.dir/src/execution_scheduling_demo.cpp.s
 .PHONY : src/execution_scheduling_demo.cpp.s
 
+src/recursive_mutex_demo.o: src/recursive_mutex_demo.cpp.o
+
+.PHONY : src/recursive_mutex_demo.o
+
+# target to build an object file
+src/recursive_mutex_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex_demo.dir/build.make CMakeFiles/recursive_mutex_demo.dir/src/recursive_mutex_demo.cpp.o
+.PHONY : src/recursive_mutex_demo.cpp.o
+
+src/recursive_mutex_demo.i: src/recursive_mutex_demo.cpp.i
+
+.PHONY : src/recursive_mutex_demo.i
+
+# target to preprocess a source file
+src/recursive_mutex_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex_demo.dir/build.make CMakeFiles/recursive_mutex_demo.dir/src/recursive_mutex_demo.cpp.i
+.PHONY : src/recursive_mutex_demo.cpp.i
+
+src/recursive_mutex_demo.s: src/recursive_mutex_demo.cpp.s
+
+.PHONY : src/recursive_mutex_demo.s
+
+# target to generate assembly for a file
+src/recursive_mutex_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive_mutex_demo.dir/build.make CMakeFiles/recursive_mutex_demo.dir/src/recursive_mutex_demo.cpp.s
+.PHONY : src/recursive_mutex_demo.cpp.s
+
+src/shared_mutex_demo.o: src/shared_mutex_demo.cpp.o
+
+.PHONY : src/shared_mutex_demo.o
+
+# target to build an object file
+src/shared_mutex_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mutex_demo.dir/build.make CMakeFiles/shared_mutex_demo.dir/src/shared_mutex_demo.cpp.o
+.PHONY : src/shared_mutex_demo.cpp.o
+
+src/shared_mutex_demo.i: src/shared_mutex_demo.cpp.i
+
+.PHONY : src/shared_mutex_demo.i
+
+# target to preprocess a source file
+src/shared_mutex_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mutex_demo.dir/build.make CMakeFiles/shared_mutex_demo.dir/src/shared_mutex_demo.cpp.i
+.PHONY : src/shared_mutex_demo.cpp.i
+
+src/shared_mutex_demo.s: src/shared_mutex_demo.cpp.s
+
+.PHONY : src/shared_mutex_demo.s
+
+# target to generate assembly for a file
+src/shared_mutex_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mutex_demo.dir/build.make CMakeFiles/shared_mutex_demo.dir/src/shared_mutex_demo.cpp.s
+.PHONY : src/shared_mutex_demo.cpp.s
+
 src/thread_lifecycle_demo.o: src/thread_lifecycle_demo.cpp.o
 
 .PHONY : src/thread_lifecycle_demo.o
@@ -409,6 +502,33 @@ src/thread_process_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/src/thread_process_demo.cpp.s
 .PHONY : src/thread_process_demo.cpp.s
 
+src/try_lock_demo.o: src/try_lock_demo.cpp.o
+
+.PHONY : src/try_lock_demo.o
+
+# target to build an object file
+src/try_lock_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/try_lock_demo.dir/build.make CMakeFiles/try_lock_demo.dir/src/try_lock_demo.cpp.o
+.PHONY : src/try_lock_demo.cpp.o
+
+src/try_lock_demo.i: src/try_lock_demo.cpp.i
+
+.PHONY : src/try_lock_demo.i
+
+# target to preprocess a source file
+src/try_lock_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/try_lock_demo.dir/build.make CMakeFiles/try_lock_demo.dir/src/try_lock_demo.cpp.i
+.PHONY : src/try_lock_demo.cpp.i
+
+src/try_lock_demo.s: src/try_lock_demo.cpp.s
+
+.PHONY : src/try_lock_demo.s
+
+# target to generate assembly for a file
+src/try_lock_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/try_lock_demo.dir/build.make CMakeFiles/try_lock_demo.dir/src/try_lock_demo.cpp.s
+.PHONY : src/try_lock_demo.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -422,8 +542,11 @@ help:
 	@echo "... data_race_demo"
 	@echo "... detached_thread_demo"
 	@echo "... execution_scheduling_demo"
+	@echo "... recursive_mutex_demo"
+	@echo "... shared_mutex_demo"
 	@echo "... thread_lifecycle_demo"
 	@echo "... thread_process_demo"
+	@echo "... try_lock_demo"
 	@echo "... lib/a.o"
 	@echo "... lib/a.i"
 	@echo "... lib/a.s"
@@ -439,12 +562,21 @@ help:
 	@echo "... src/execution_scheduling_demo.o"
 	@echo "... src/execution_scheduling_demo.i"
 	@echo "... src/execution_scheduling_demo.s"
+	@echo "... src/recursive_mutex_demo.o"
+	@echo "... src/recursive_mutex_demo.i"
+	@echo "... src/recursive_mutex_demo.s"
+	@echo "... src/shared_mutex_demo.o"
+	@echo "... src/shared_mutex_demo.i"
+	@echo "... src/shared_mutex_demo.s"
 	@echo "... src/thread_lifecycle_demo.o"
 	@echo "... src/thread_lifecycle_demo.i"
 	@echo "... src/thread_lifecycle_demo.s"
 	@echo "... src/thread_process_demo.o"
 	@echo "... src/thread_process_demo.i"
 	@echo "... src/thread_process_demo.s"
+	@echo "... src/try_lock_demo.o"
+	@echo "... src/try_lock_demo.i"
+	@echo "... src/try_lock_demo.s"
 .PHONY : help
 
 
