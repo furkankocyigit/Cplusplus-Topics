@@ -1,18 +1,18 @@
 [
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/detached_thread_demo.dir/src/detached_thread_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/detached_thread_demo.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/detached_thread_demo.cpp"
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/try_lock_demo.dir/src/try_lock_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/try_lock_demo.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/try_lock_demo.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/starvation_demo.dir/src/starvation_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/starvation_demo.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/starvation_demo.cpp"
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
   "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/data_race_demo.dir/src/data_race_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/data_race_demo.cpp",
   "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/data_race_demo.cpp"
-},
-{
-  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/try_lock_demo.dir/src/try_lock_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/try_lock_demo.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/try_lock_demo.cpp"
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
@@ -26,8 +26,28 @@
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/detached_thread_demo.dir/src/detached_thread_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/detached_thread_demo.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/detached_thread_demo.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/thread_process_demo.dir/src/thread_process_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/thread_process_demo.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/thread_process_demo.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/livelock_demo.dir/src/livelock_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/livelock_demo.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/livelock_demo.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
   "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/execution_scheduling_demo.dir/src/execution_scheduling_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/execution_scheduling_demo.cpp",
   "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/execution_scheduling_demo.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/deadlock_demo.dir/src/deadlock_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/deadlock_demo.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/deadlock_demo.cpp"
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
@@ -36,17 +56,17 @@
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/shared_mutex_demo.dir/src/shared_mutex_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/shared_mutex_demo.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/shared_mutex_demo.cpp"
-},
-{
-  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
   "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/thread_lifecycle_demo.dir/src/thread_lifecycle_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/thread_lifecycle_demo.cpp",
   "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/thread_lifecycle_demo.cpp"
 },
 {
   "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
-  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/thread_process_demo.dir/src/thread_process_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/thread_process_demo.cpp",
-  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/thread_process_demo.cpp"
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/abandoned_lock_demo.dir/src/abandoned_lock_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/abandoned_lock_demo.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/abandoned_lock_demo.cpp"
+},
+{
+  "directory": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/build",
+  "command": "/usr/bin/g++-7  -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/lib -I/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/include -I/home/ubuntu/vcpkg/installed/x64-linux/include -pthread -g -std=gnu++1z -o CMakeFiles/shared_mutex_demo.dir/src/shared_mutex_demo.cpp.o -c /home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/shared_mutex_demo.cpp",
+  "file": "/home/ubuntu/Cplusplus-Topics/Parallel_and_concurrent_part1/src/shared_mutex_demo.cpp"
 }
 ]

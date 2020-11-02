@@ -1,0 +1,1 @@
+/usr/bin/g++-7 -pthread -g CMakeFiles/livelock_demo.dir/src/livelock_demo.cpp.o -o livelock_demo  libMyLib.a 
