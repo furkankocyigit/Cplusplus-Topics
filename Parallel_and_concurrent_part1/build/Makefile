@@ -130,17 +130,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named detached_thread_demo
+# Target rules for targets named try_lock_demo
 
 # Build rule for target.
-detached_thread_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detached_thread_demo
-.PHONY : detached_thread_demo
+try_lock_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 try_lock_demo
+.PHONY : try_lock_demo
 
 # fast build rule for target.
-detached_thread_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/build
-.PHONY : detached_thread_demo/fast
+try_lock_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/try_lock_demo.dir/build.make CMakeFiles/try_lock_demo.dir/build
+.PHONY : try_lock_demo/fast
+
+#=============================================================================
+# Target rules for targets named starvation_demo
+
+# Build rule for target.
+starvation_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 starvation_demo
+.PHONY : starvation_demo
+
+# fast build rule for target.
+starvation_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/starvation_demo.dir/build.make CMakeFiles/starvation_demo.dir/build
+.PHONY : starvation_demo/fast
 
 #=============================================================================
 # Target rules for targets named data_race_demo
@@ -154,19 +167,6 @@ data_race_demo: cmake_check_build_system
 data_race_demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_race_demo.dir/build.make CMakeFiles/data_race_demo.dir/build
 .PHONY : data_race_demo/fast
-
-#=============================================================================
-# Target rules for targets named try_lock_demo
-
-# Build rule for target.
-try_lock_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 try_lock_demo
-.PHONY : try_lock_demo
-
-# fast build rule for target.
-try_lock_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/try_lock_demo.dir/build.make CMakeFiles/try_lock_demo.dir/build
-.PHONY : try_lock_demo/fast
 
 #=============================================================================
 # Target rules for targets named atomic_object_demo
@@ -195,6 +195,45 @@ MyLib/fast:
 .PHONY : MyLib/fast
 
 #=============================================================================
+# Target rules for targets named detached_thread_demo
+
+# Build rule for target.
+detached_thread_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detached_thread_demo
+.PHONY : detached_thread_demo
+
+# fast build rule for target.
+detached_thread_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detached_thread_demo.dir/build.make CMakeFiles/detached_thread_demo.dir/build
+.PHONY : detached_thread_demo/fast
+
+#=============================================================================
+# Target rules for targets named thread_process_demo
+
+# Build rule for target.
+thread_process_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_process_demo
+.PHONY : thread_process_demo
+
+# fast build rule for target.
+thread_process_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/build
+.PHONY : thread_process_demo/fast
+
+#=============================================================================
+# Target rules for targets named livelock_demo
+
+# Build rule for target.
+livelock_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 livelock_demo
+.PHONY : livelock_demo
+
+# fast build rule for target.
+livelock_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/livelock_demo.dir/build.make CMakeFiles/livelock_demo.dir/build
+.PHONY : livelock_demo/fast
+
+#=============================================================================
 # Target rules for targets named execution_scheduling_demo
 
 # Build rule for target.
@@ -206,6 +245,19 @@ execution_scheduling_demo: cmake_check_build_system
 execution_scheduling_demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execution_scheduling_demo.dir/build.make CMakeFiles/execution_scheduling_demo.dir/build
 .PHONY : execution_scheduling_demo/fast
+
+#=============================================================================
+# Target rules for targets named deadlock_demo
+
+# Build rule for target.
+deadlock_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deadlock_demo
+.PHONY : deadlock_demo
+
+# fast build rule for target.
+deadlock_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deadlock_demo.dir/build.make CMakeFiles/deadlock_demo.dir/build
+.PHONY : deadlock_demo/fast
 
 #=============================================================================
 # Target rules for targets named recursive_mutex_demo
@@ -221,19 +273,6 @@ recursive_mutex_demo/fast:
 .PHONY : recursive_mutex_demo/fast
 
 #=============================================================================
-# Target rules for targets named shared_mutex_demo
-
-# Build rule for target.
-shared_mutex_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shared_mutex_demo
-.PHONY : shared_mutex_demo
-
-# fast build rule for target.
-shared_mutex_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mutex_demo.dir/build.make CMakeFiles/shared_mutex_demo.dir/build
-.PHONY : shared_mutex_demo/fast
-
-#=============================================================================
 # Target rules for targets named thread_lifecycle_demo
 
 # Build rule for target.
@@ -247,17 +286,30 @@ thread_lifecycle_demo/fast:
 .PHONY : thread_lifecycle_demo/fast
 
 #=============================================================================
-# Target rules for targets named thread_process_demo
+# Target rules for targets named abandoned_lock_demo
 
 # Build rule for target.
-thread_process_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_process_demo
-.PHONY : thread_process_demo
+abandoned_lock_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 abandoned_lock_demo
+.PHONY : abandoned_lock_demo
 
 # fast build rule for target.
-thread_process_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_process_demo.dir/build.make CMakeFiles/thread_process_demo.dir/build
-.PHONY : thread_process_demo/fast
+abandoned_lock_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abandoned_lock_demo.dir/build.make CMakeFiles/abandoned_lock_demo.dir/build
+.PHONY : abandoned_lock_demo/fast
+
+#=============================================================================
+# Target rules for targets named shared_mutex_demo
+
+# Build rule for target.
+shared_mutex_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shared_mutex_demo
+.PHONY : shared_mutex_demo
+
+# fast build rule for target.
+shared_mutex_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mutex_demo.dir/build.make CMakeFiles/shared_mutex_demo.dir/build
+.PHONY : shared_mutex_demo/fast
 
 lib/a.o: lib/a.cpp.o
 
@@ -285,6 +337,33 @@ lib/a.s: lib/a.cpp.s
 lib/a.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyLib.dir/build.make CMakeFiles/MyLib.dir/lib/a.cpp.s
 .PHONY : lib/a.cpp.s
+
+src/abandoned_lock_demo.o: src/abandoned_lock_demo.cpp.o
+
+.PHONY : src/abandoned_lock_demo.o
+
+# target to build an object file
+src/abandoned_lock_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abandoned_lock_demo.dir/build.make CMakeFiles/abandoned_lock_demo.dir/src/abandoned_lock_demo.cpp.o
+.PHONY : src/abandoned_lock_demo.cpp.o
+
+src/abandoned_lock_demo.i: src/abandoned_lock_demo.cpp.i
+
+.PHONY : src/abandoned_lock_demo.i
+
+# target to preprocess a source file
+src/abandoned_lock_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abandoned_lock_demo.dir/build.make CMakeFiles/abandoned_lock_demo.dir/src/abandoned_lock_demo.cpp.i
+.PHONY : src/abandoned_lock_demo.cpp.i
+
+src/abandoned_lock_demo.s: src/abandoned_lock_demo.cpp.s
+
+.PHONY : src/abandoned_lock_demo.s
+
+# target to generate assembly for a file
+src/abandoned_lock_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abandoned_lock_demo.dir/build.make CMakeFiles/abandoned_lock_demo.dir/src/abandoned_lock_demo.cpp.s
+.PHONY : src/abandoned_lock_demo.cpp.s
 
 src/atomic_object_demo.o: src/atomic_object_demo.cpp.o
 
@@ -340,6 +419,33 @@ src/data_race_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_race_demo.dir/build.make CMakeFiles/data_race_demo.dir/src/data_race_demo.cpp.s
 .PHONY : src/data_race_demo.cpp.s
 
+src/deadlock_demo.o: src/deadlock_demo.cpp.o
+
+.PHONY : src/deadlock_demo.o
+
+# target to build an object file
+src/deadlock_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deadlock_demo.dir/build.make CMakeFiles/deadlock_demo.dir/src/deadlock_demo.cpp.o
+.PHONY : src/deadlock_demo.cpp.o
+
+src/deadlock_demo.i: src/deadlock_demo.cpp.i
+
+.PHONY : src/deadlock_demo.i
+
+# target to preprocess a source file
+src/deadlock_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deadlock_demo.dir/build.make CMakeFiles/deadlock_demo.dir/src/deadlock_demo.cpp.i
+.PHONY : src/deadlock_demo.cpp.i
+
+src/deadlock_demo.s: src/deadlock_demo.cpp.s
+
+.PHONY : src/deadlock_demo.s
+
+# target to generate assembly for a file
+src/deadlock_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deadlock_demo.dir/build.make CMakeFiles/deadlock_demo.dir/src/deadlock_demo.cpp.s
+.PHONY : src/deadlock_demo.cpp.s
+
 src/detached_thread_demo.o: src/detached_thread_demo.cpp.o
 
 .PHONY : src/detached_thread_demo.o
@@ -394,6 +500,33 @@ src/execution_scheduling_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/execution_scheduling_demo.dir/build.make CMakeFiles/execution_scheduling_demo.dir/src/execution_scheduling_demo.cpp.s
 .PHONY : src/execution_scheduling_demo.cpp.s
 
+src/livelock_demo.o: src/livelock_demo.cpp.o
+
+.PHONY : src/livelock_demo.o
+
+# target to build an object file
+src/livelock_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/livelock_demo.dir/build.make CMakeFiles/livelock_demo.dir/src/livelock_demo.cpp.o
+.PHONY : src/livelock_demo.cpp.o
+
+src/livelock_demo.i: src/livelock_demo.cpp.i
+
+.PHONY : src/livelock_demo.i
+
+# target to preprocess a source file
+src/livelock_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/livelock_demo.dir/build.make CMakeFiles/livelock_demo.dir/src/livelock_demo.cpp.i
+.PHONY : src/livelock_demo.cpp.i
+
+src/livelock_demo.s: src/livelock_demo.cpp.s
+
+.PHONY : src/livelock_demo.s
+
+# target to generate assembly for a file
+src/livelock_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/livelock_demo.dir/build.make CMakeFiles/livelock_demo.dir/src/livelock_demo.cpp.s
+.PHONY : src/livelock_demo.cpp.s
+
 src/recursive_mutex_demo.o: src/recursive_mutex_demo.cpp.o
 
 .PHONY : src/recursive_mutex_demo.o
@@ -447,6 +580,33 @@ src/shared_mutex_demo.s: src/shared_mutex_demo.cpp.s
 src/shared_mutex_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mutex_demo.dir/build.make CMakeFiles/shared_mutex_demo.dir/src/shared_mutex_demo.cpp.s
 .PHONY : src/shared_mutex_demo.cpp.s
+
+src/starvation_demo.o: src/starvation_demo.cpp.o
+
+.PHONY : src/starvation_demo.o
+
+# target to build an object file
+src/starvation_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/starvation_demo.dir/build.make CMakeFiles/starvation_demo.dir/src/starvation_demo.cpp.o
+.PHONY : src/starvation_demo.cpp.o
+
+src/starvation_demo.i: src/starvation_demo.cpp.i
+
+.PHONY : src/starvation_demo.i
+
+# target to preprocess a source file
+src/starvation_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/starvation_demo.dir/build.make CMakeFiles/starvation_demo.dir/src/starvation_demo.cpp.i
+.PHONY : src/starvation_demo.cpp.i
+
+src/starvation_demo.s: src/starvation_demo.cpp.s
+
+.PHONY : src/starvation_demo.s
+
+# target to generate assembly for a file
+src/starvation_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/starvation_demo.dir/build.make CMakeFiles/starvation_demo.dir/src/starvation_demo.cpp.s
+.PHONY : src/starvation_demo.cpp.s
 
 src/thread_lifecycle_demo.o: src/thread_lifecycle_demo.cpp.o
 
@@ -538,36 +698,52 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyLib"
+	@echo "... abandoned_lock_demo"
 	@echo "... atomic_object_demo"
 	@echo "... data_race_demo"
+	@echo "... deadlock_demo"
 	@echo "... detached_thread_demo"
 	@echo "... execution_scheduling_demo"
+	@echo "... livelock_demo"
 	@echo "... recursive_mutex_demo"
 	@echo "... shared_mutex_demo"
+	@echo "... starvation_demo"
 	@echo "... thread_lifecycle_demo"
 	@echo "... thread_process_demo"
 	@echo "... try_lock_demo"
 	@echo "... lib/a.o"
 	@echo "... lib/a.i"
 	@echo "... lib/a.s"
+	@echo "... src/abandoned_lock_demo.o"
+	@echo "... src/abandoned_lock_demo.i"
+	@echo "... src/abandoned_lock_demo.s"
 	@echo "... src/atomic_object_demo.o"
 	@echo "... src/atomic_object_demo.i"
 	@echo "... src/atomic_object_demo.s"
 	@echo "... src/data_race_demo.o"
 	@echo "... src/data_race_demo.i"
 	@echo "... src/data_race_demo.s"
+	@echo "... src/deadlock_demo.o"
+	@echo "... src/deadlock_demo.i"
+	@echo "... src/deadlock_demo.s"
 	@echo "... src/detached_thread_demo.o"
 	@echo "... src/detached_thread_demo.i"
 	@echo "... src/detached_thread_demo.s"
 	@echo "... src/execution_scheduling_demo.o"
 	@echo "... src/execution_scheduling_demo.i"
 	@echo "... src/execution_scheduling_demo.s"
+	@echo "... src/livelock_demo.o"
+	@echo "... src/livelock_demo.i"
+	@echo "... src/livelock_demo.s"
 	@echo "... src/recursive_mutex_demo.o"
 	@echo "... src/recursive_mutex_demo.i"
 	@echo "... src/recursive_mutex_demo.s"
 	@echo "... src/shared_mutex_demo.o"
 	@echo "... src/shared_mutex_demo.i"
 	@echo "... src/shared_mutex_demo.s"
+	@echo "... src/starvation_demo.o"
+	@echo "... src/starvation_demo.i"
+	@echo "... src/starvation_demo.s"
 	@echo "... src/thread_lifecycle_demo.o"
 	@echo "... src/thread_lifecycle_demo.i"
 	@echo "... src/thread_lifecycle_demo.s"
