@@ -1,1 +1,0 @@
-/usr/bin/g++-7 -pthread -g CMakeFiles/abandoned_lock_demo.dir/src/abandoned_lock_demo.cpp.o -o abandoned_lock_demo  libMyLib.a 

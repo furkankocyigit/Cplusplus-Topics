@@ -1,1 +1,0 @@
-/usr/bin/g++-7 -g CMakeFiles/poly-lambda.dir/src/chap05/poly-lambda.cpp.o -o poly-lambda  libMyLib.a 

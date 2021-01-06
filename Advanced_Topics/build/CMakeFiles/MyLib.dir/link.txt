@@ -1,2 +1,0 @@
-/usr/bin/ar qc libMyLib.a CMakeFiles/MyLib.dir/lib/BWString.cpp.o CMakeFiles/MyLib.dir/lib/BWUTest.cpp.o CMakeFiles/MyLib.dir/lib/numword.cpp.o CMakeFiles/MyLib.dir/lib/strc.cpp.o
-/usr/bin/ranlib libMyLib.a

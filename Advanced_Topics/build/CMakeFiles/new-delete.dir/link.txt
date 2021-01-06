@@ -1,1 +1,0 @@
-/usr/bin/g++-7 -g CMakeFiles/new-delete.dir/src/chap01/new-delete.cpp.o -o new-delete 

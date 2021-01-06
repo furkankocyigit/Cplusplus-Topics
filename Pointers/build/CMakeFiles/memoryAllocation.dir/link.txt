@@ -1,1 +1,0 @@
-/usr/bin/g++-7 -g CMakeFiles/memoryAllocation.dir/src/memoryAllocation.cpp.o -o memoryAllocation 

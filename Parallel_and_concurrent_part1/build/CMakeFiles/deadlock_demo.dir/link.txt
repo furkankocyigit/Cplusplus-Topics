@@ -1,1 +1,0 @@
-/usr/bin/g++-7 -pthread -g CMakeFiles/deadlock_demo.dir/src/deadlock_demo.cpp.o -o deadlock_demo  libMyLib.a 
