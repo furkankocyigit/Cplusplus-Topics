@@ -1,1 +1,0 @@
-/usr/bin/g++-7 -g CMakeFiles/usage_pointer.dir/src/usage_pointer.cpp.o -o usage_pointer 

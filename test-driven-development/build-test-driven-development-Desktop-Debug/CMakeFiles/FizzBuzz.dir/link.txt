@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/FizzBuzz.dir/FizzBuzz.cpp.o -o FizzBuzz  /usr/lib/libgtest.a -lpthread 

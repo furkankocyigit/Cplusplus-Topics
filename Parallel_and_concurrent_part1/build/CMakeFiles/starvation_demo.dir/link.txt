@@ -1,1 +1,0 @@
-/usr/bin/g++-7 -pthread -g CMakeFiles/starvation_demo.dir/src/starvation_demo.cpp.o -o starvation_demo  libMyLib.a 

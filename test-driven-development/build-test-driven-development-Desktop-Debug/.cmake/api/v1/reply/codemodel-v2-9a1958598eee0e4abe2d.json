@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "test-driven-development",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FizzBuzz::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FizzBuzz-Debug-d5f9891c7c56e86fb97a.json",
+					"name" : "FizzBuzz",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test-driven-development::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-driven-development-Debug-dc018f124660a0fd2d18.json",
+					"name" : "test-driven-development",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/Cplusplus-Topics/test-driven-development/build-test-driven-development-Desktop-Debug",
+		"source" : "/home/ubuntu/Cplusplus-Topics/test-driven-development/test-driven-development"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

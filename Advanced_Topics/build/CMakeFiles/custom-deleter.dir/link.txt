@@ -1,1 +1,0 @@
-/usr/bin/g++-7 -g CMakeFiles/custom-deleter.dir/src/chap03/custom-deleter.cpp.o -o custom-deleter  libMyLib.a 

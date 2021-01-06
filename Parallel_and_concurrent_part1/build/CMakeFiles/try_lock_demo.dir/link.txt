@@ -1,1 +1,0 @@
-/usr/bin/g++-7 -pthread -g CMakeFiles/try_lock_demo.dir/src/try_lock_demo.cpp.o -o try_lock_demo  libMyLib.a 
